@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+set -e
+if [ "$#" -ne 2 ]; then
+  >&2 echo "Usage: extract-website-data https://example.org/ /var/www/example.org/"
+  exit 1
+fi
+
+# Parse arguments and apply settings
+BASEURI=$1
+FILEPATH=$2
+pushd `dirname $0` > /dev/null; SCRIPTPATH=`pwd`; popd >/dev/null
+TMP=$SCRIPTPATH/tmp
+mkdir -p $TMP
+
+pushd $FILEPATH >/dev/null
+echo > $TMP/website-raw.nt
+# Extract data from the website's Turtle documents
+for file in $(find * -name *.ttl); do
+  serdi ./$file -b $BASEURI$file >> $TMP/website-raw.nt
+done
+# Extract RDFa from the website's HTML+RDFa documents
+for file in $(find * -name index.html); do
+  $SCRIPTPATH/rdfa2ttl $BASEURI`dirname $file`/ ./$file >> $TMP/website-raw.nt
+done
+popd >/dev/null
+
+# Collect and skolemize ontologies
+fileid=0
+echo > $TMP/ontologies.nt
+for file in $SCRIPTPATH/ontologies/*.ttl; do
+  serdi $file | sed "s/_:b\([[:digit:]]*\)/<http:\/\/example.org\/.well-known\/genid\/$fileid-\\1>/g" >> $TMP/ontologies.nt
+  let fileid=fileid+1
+done
+# Compute deductive closure of ontologies
+eye --pass --nope --traditional --turtle $TMP/ontologies.nt $SCRIPTPATH/ontologies/**/*.n3 | grep -v '^"' | serdi - | sort > $TMP/ontologies-reasoned.nt
+
+# Compute deductive closure of website data
+eye --pass --nope --traditional --turtle $TMP/website-raw.nt --turtle $TMP/ontologies-reasoned.nt $SCRIPTPATH/ontologies/**/*.n3 | grep -v '^"' | serdi - | sort > $TMP/website-ontologies-reasoned.nt
+# Exclude triples from ontologies
+comm -23 $TMP/website-ontologies-reasoned.nt $TMP/ontologies-reasoned.nt > $TMP/website-reasoned.nt
+# Exclude unnecessary triples
+egrep -v 'http://schema.org/articleBody|/404/|\.well-known/genid/|XMLSchema\#anyURI|owl\#Thing|\#STI' $TMP/website-reasoned.nt > $TMP/website.nt
+
+# Output result, starting with triples from this domain
+grep    "^<$BASEURI" $TMP/website.nt
+grep -v "^<$BASEURI" $TMP/website.nt
