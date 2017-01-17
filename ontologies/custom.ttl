@@ -1,0 +1,20 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX schema: <http://schema.org/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX cito: <http://purl.org/spar/cito/>
+
+# The statements below are truths on https://ruben.verborgh.org/;
+# they might or might not hold in other contexts.
+# They will only be used for reasoning, and not appear in the output.
+
+schema:name owl:equivalentProperty rdfs:label.
+schema:name owl:equivalentProperty dc:title.
+schema:name owl:equivalentProperty foaf:name.
+
+schema:inverseOf owl:equivalentProperty owl:inverseOf.
+
+foaf:knows a owl:SymmetricProperty.
+
+cito:cites owl:equivalentProperty schema:citation.
