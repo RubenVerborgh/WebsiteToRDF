@@ -39,7 +39,7 @@ eye --pass --nope --traditional --turtle $TMP/website-raw.nt --turtle $TMP/ontol
 # Exclude triples from ontologies
 comm -23 $TMP/website-ontologies-reasoned.nt $TMP/ontologies-reasoned.nt > $TMP/website-reasoned.nt
 # Exclude unnecessary triples
-egrep -v 'http://schema.org/articleBody|/404/|\.well-known/genid/|XMLSchema\#anyURI|owl\#Thing|\#STI' $TMP/website-reasoned.nt > $TMP/website.nt
+egrep -v 'http://schema.org/articleBody|/404/|/about/email/|\.well-known/genid/|XMLSchema\#anyURI|owl\#Thing|\#STI' $TMP/website-reasoned.nt > $TMP/website.nt
 
 # Output result, starting with triples from this domain
 grep    "^<$BASEURI" $TMP/website.nt
