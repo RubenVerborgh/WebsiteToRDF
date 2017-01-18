@@ -7694,7 +7694,7 @@
 		"웹사이트"@ko ,
 		"site web"@fr ;
 	<http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Work> ;
-	<http://www.w3.org/2002/07/owl#equivalentClass> <http://schema.org/WebPage> ;
+	<http://www.w3.org/2002/07/owl#equivalentClass> <http://schema.org/WebSite> ;
 	<http://www.w3.org/ns/prov#wasDerivedFrom> <http://mappings.dbpedia.org/index.php/OntologyClass:Website> .
 
 <http://dbpedia.org/ontology/Lymph>
