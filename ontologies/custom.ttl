@@ -17,4 +17,6 @@ schema:inverseOf owl:equivalentProperty owl:inverseOf.
 
 foaf:knows a owl:SymmetricProperty.
 
+foaf:maker owl:equivalentProperty dc:creator.
+
 cito:cites owl:equivalentProperty schema:citation.
