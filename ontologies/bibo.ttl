@@ -794,7 +794,7 @@ sources."""@en ;
             rdf:Seq
         )
     ] ;
-    rdfs:subPropertyOf :contributorList ;
+    # rdfs:subPropertyOf :contributorList ;
     ns:term_status "stable" .
 
 :bdarcus
@@ -991,7 +991,7 @@ degrees:phd
             rdf:Seq
         )
     ] ;
-    rdfs:subPropertyOf :contributorList ;
+    # rdfs:subPropertyOf :contributorList ;
     ns:term_status "stable" .
 
 :eissn
