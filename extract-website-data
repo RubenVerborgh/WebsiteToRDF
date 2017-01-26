@@ -32,10 +32,10 @@ for file in $SCRIPTPATH/ontologies/*.ttl; do
   let fileid=fileid+1
 done
 # Compute deductive closure of ontologies
-eye --pass --nope --traditional --turtle $TMP/ontologies.nt $SCRIPTPATH/ontologies/**/*.n3 | grep -v '^"' | serdi - | sort > $TMP/ontologies-reasoned.nt
+eye --pass --nope --traditional --turtle $TMP/ontologies.nt $SCRIPTPATH/ontologies/**/*.n3 | egrep -v '^"|^[0-9]' | serdi - | sort > $TMP/ontologies-reasoned.nt
 
 # Compute deductive closure of website data
-eye --pass --nope --traditional --turtle $TMP/website-raw.nt --turtle $TMP/ontologies-reasoned.nt $SCRIPTPATH/ontologies/**/*.n3 | grep -v '^"' | serdi - | sort > $TMP/website-ontologies-reasoned.nt
+eye --pass --nope --traditional --turtle $TMP/website-raw.nt --turtle $TMP/ontologies-reasoned.nt $SCRIPTPATH/ontologies/**/*.n3 | egrep -v '^"|^[0-9]' | serdi - | sort > $TMP/website-ontologies-reasoned.nt
 # Exclude triples from ontologies
 comm -23 $TMP/website-ontologies-reasoned.nt $TMP/ontologies-reasoned.nt > $TMP/website-reasoned.nt
 # Exclude unnecessary triples
