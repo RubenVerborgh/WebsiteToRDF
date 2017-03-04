@@ -14,6 +14,7 @@ mkdir -p $TMP
 
 pushd $FILEPATH >/dev/null
 echo > $TMP/website-raw.nt
+node -e 'console.error(Date.now())'
 # Extract data from the website's Turtle documents
 for file in $(find * -name *.ttl); do
   serdi ./$file -b $BASEURI$file >> $TMP/website-raw.nt
@@ -23,6 +24,7 @@ for file in $(find * -name index.html); do
   $SCRIPTPATH/rdfa2ttl $BASEURI`dirname $file`/ ./$file >> $TMP/website-raw.nt
 done
 popd >/dev/null
+node -e 'console.error(Date.now())'
 
 # Collect and skolemize ontologies
 fileid=0
@@ -31,15 +33,20 @@ for file in $SCRIPTPATH/ontologies/*.ttl; do
   serdi $file | sed "s/_:b\([[:digit:]]*\)/<http:\/\/example.org\/.well-known\/genid\/$fileid-\\1>/g" >> $TMP/ontologies.nt
   let fileid=fileid+1
 done
+node -e 'console.error(Date.now())'
 # Compute deductive closure of ontologies
 eye --pass --nope --traditional --turtle $TMP/ontologies.nt $SCRIPTPATH/ontologies/**/*.n3 | egrep -v '^"|^[0-9]' | serdi - | sort > $TMP/ontologies-reasoned.nt
+node -e 'console.error(Date.now())'
 
 # Compute deductive closure of website data
 eye --pass --nope --traditional --turtle $TMP/website-raw.nt --turtle $TMP/ontologies-reasoned.nt $SCRIPTPATH/ontologies/**/*.n3 | egrep -v '^"|^[0-9]' | serdi - | sort > $TMP/website-ontologies-reasoned.nt
+node -e 'console.error(Date.now())'
 # Exclude triples from ontologies
 comm -23 $TMP/website-ontologies-reasoned.nt $TMP/ontologies-reasoned.nt > $TMP/website-reasoned.nt
+node -e 'console.error(Date.now())'
 # Exclude unnecessary triples
 egrep -v 'http://schema.org/articleBody|/404/|/about/email/|\.well-known/genid/|XMLSchema\#anyURI|owl\#Thing|\#STI' $TMP/website-reasoned.nt > $TMP/website.nt
+node -e 'console.error(Date.now())'
 
 # Output result, starting with triples from this domain
 grep    "^<$BASEURI" $TMP/website.nt
