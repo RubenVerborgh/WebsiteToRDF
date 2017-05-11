@@ -1,4 +1,4 @@
-# Convert HTML+RDFa to Turtle
+#Convert HTML+RDFa to Turtle
 
 This repository contains a simple pipeline
 that extracts HTML+RDFa data from webpages
@@ -27,6 +27,10 @@ where `https://example.org/` is the URL of your homepage and `/var/www/example.o
 Place the ontologies you want to reason on in the `ontologies` folder.
 
 Rules for common RDFS and OWL constructs are available [at the EYE website](http://eulersharp.sourceforge.net/#theories).
+
+## Run via Docker
+- Build the Docker image with `docker build -t WebsiteToRDF .`
+- Run container with `docker run -v /path/to/site:/data -v /path/to/results/folder:/result -i --rm WebsiteToRDF http://url.of.website`.
 
 ## License
 ©2017 [Ruben Verborgh](http://ruben.verborgh.org/) – [MIT License](https://github.com/RubenVerborgh/WebsiteToRDF/blob/master/LICENCE.md).

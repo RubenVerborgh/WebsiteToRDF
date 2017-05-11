@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#/bin/bash
 set -e
 if [ "$#" -ne 2 ]; then
   >&2 echo "Usage: extract-website-data https://example.org/ /var/www/example.org/"
@@ -19,7 +19,8 @@ for file in $(find * -name *.ttl); do
   serdi ./$file -b $BASEURI$file >> $TMP/website-raw.nt
 done
 # Extract RDFa from the website's HTML+RDFa documents
-for file in $(find * -name index.html); do
+for file in $(find * -name "*.html"); do
+  >&2 echo $file
   $SCRIPTPATH/rdfa2ttl $BASEURI`dirname $file`/ ./$file >> $TMP/website-raw.nt
 done
 popd >/dev/null
@@ -32,10 +33,10 @@ for file in $SCRIPTPATH/ontologies/*.ttl; do
   let fileid=fileid+1
 done
 # Compute deductive closure of ontologies
-eye --pass --nope --traditional --turtle $TMP/ontologies.nt $SCRIPTPATH/ontologies/**/*.n3 | egrep -v '^"|^[0-9]' | serdi - | sort > $TMP/ontologies-reasoned.nt
+/opt/eye/bin/eye.sh --pass --nope --traditional --turtle $TMP/ontologies.nt $SCRIPTPATH/ontologies/**/*.n3 | egrep -v '^"|^[0-9]' | serdi - | sort > $TMP/ontologies-reasoned.nt
 
 # Compute deductive closure of website data
-eye --pass --nope --traditional --turtle $TMP/website-raw.nt --turtle $TMP/ontologies-reasoned.nt $SCRIPTPATH/ontologies/**/*.n3 | egrep -v '^"|^[0-9]' | serdi - | sort > $TMP/website-ontologies-reasoned.nt
+/opt/eye/bin/eye.sh --pass --nope --traditional --turtle $TMP/website-raw.nt --turtle $TMP/ontologies-reasoned.nt $SCRIPTPATH/ontologies/**/*.n3 | egrep -v '^"|^[0-9]' | serdi - | sort > $TMP/website-ontologies-reasoned.nt
 # Exclude triples from ontologies
 comm -23 $TMP/website-ontologies-reasoned.nt $TMP/ontologies-reasoned.nt > $TMP/website-reasoned.nt
 # Exclude unnecessary triples
