@@ -31,6 +31,7 @@ Rules for common RDFS and OWL constructs are available [at the EYE website](http
 ## Run via Docker
 - Build the Docker image with `docker build -t WebsiteToRDF .`
 - Run container with `docker run -v /path/to/site:/data -v /path/to/results/folder:/result -i --rm WebsiteToRDF http://url.of.website`.
+- The RDF triples will be available in `/path/to/results/folder/triples.nt`.
 
 ## License
 ©2017 [Ruben Verborgh](http://ruben.verborgh.org/) – [MIT License](https://github.com/RubenVerborgh/WebsiteToRDF/blob/master/LICENCE.md).
