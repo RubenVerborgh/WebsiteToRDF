@@ -20,6 +20,7 @@ for file in $(find * -name *.ttl); do
 done
 # Extract RDFa from the website's HTML+RDFa documents
 for file in $(find * -name index.html); do
+  >&2 echo $file
   $SCRIPTPATH/rdfa2ttl $BASEURI`dirname $file`/ ./$file >> $TMP/website-raw.nt
 done
 popd >/dev/null
