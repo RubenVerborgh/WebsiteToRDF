@@ -4112,7 +4112,7 @@
 		"ciceanna éirice"@ga ,
 		"Elfmeterschießen"@de ;
 	<http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> ;
-	<http://www.w3.org/2002/07/owl#equivalentClass> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+	<http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
 	<http://www.w3.org/ns/prov#wasDerivedFrom> <http://mappings.dbpedia.org/index.php/OntologyClass:PenaltyShootOut> .
 
 <http://dbpedia.org/ontology/RocketEngine>
