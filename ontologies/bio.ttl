@@ -1,0 +1,949 @@
+<http://purl.org/vocab/bio/0.1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/dc/terms/title> "BIO: A vocabulary for biographical information"@en .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/dc/terms/date> "2010-05-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/dc/terms/abstract> "This document describes a vocabulary for describing biographical information about people, both living and dead. "@en .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/dc/terms/description> "<div>\n        \n        <p>The BIO vocabulary contains terms useful for finding out more about people and their backgrounds and has some cross-over into genealogical information. \n        The approach taken is to describe a person's life as a series of interconnected key events, around which other information can be woven. \n        This vocabulary defines the event framework and supplies a set of core event types that cover many use cases, but it is expected that it \n        will be extended in other vocabularies to suit their needs. The intention of this vocabulary is to describe biographical events of people \n        and this intention carries through to the definitions of the properties and classes which are person-centric rather than neutral. For example \n        the Employment event puts the person being employed as the principal agent in the event rather than the employer.</p>\n        <p>The BIO vocabulary defines a number of core classes and properties for describing biographical information: </p>\n        <p><figure><img src=\"/bio/core-classes.png\"></img><br></br>Figure: Biography Vocabulary Core Classes (<a href=\"http://vocab.org/bio/core-classes.png\">PNG version</a>, <a href=\"http://vocab.org/bio/core-classes.svg\">SVG version</a>)</figure></p>\n        <p>At its heart the BIO vocabulary is concerned with people, their relationships and the events in their lives. Together these can be\n        used to build up a narrative of a person's life and their interactions with other people, organizations and the world around them. Events bound intervals\n        of time that may be associated with particular relationships between people and groups or organisations. Many different types of life event are\n        defined in this vocabulary including the obvious Birth, Marriage and Death but also Coronation, Performance and even Murder. These events are not intended\n        to be fully comprehensive but are representative of the types of events associated with biographical material. Currently the relationship segment of the\n        vocabulary is underspecified with only a generic Relationship class available. It is envisaged that many types of relationship such as families, employments\n        and ownerships will be specified in the future.</p>\n        <p>The sequence of events and intervals build a timeline of history against which people and their relationships can be placed. The aim is\n        to enable simple forms of genealogical reasoning such as determining whether a child was born out of wedlock or the location of a family\n        given the fact one of their children was attending a particular school. Events are ordered in time by relating them to one another and to abstract\n        intervals of time:</p>\n        <p><figure><img src=\"/bio/timelines.png\"></img><br></br>Figure: Biography Vocabulary Timelines(<a href=\"http://vocab.org/bio/timelines.png\">PNG version</a>, <a href=\"http://vocab.org/bio/timelines.svg\">SVG version</a>)</figure></p>\n        <p>Please see <a href=\"https://github.com/iand/vocab-bio\">https://github.com/iand/vocab-bio</a> for the master version of this vocabulary.</p>\n      </div>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/dc/terms/identifier> "http://purl.org/vocab/bio/0.1/schema" .
+<http://iandavis.com/id/me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://iandavis.com/id/me> <http://xmlns.com/foaf/0.1/name> "Ian Davis" .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/dc/terms/creator> <http://iandavis.com/id/me> .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/dc/terms/creator> "David Galbraith" .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/dc/terms/rights> "Copyright \u00A9 2002-2010 Ian Davis and David Galbraith" .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/dc/terms/issued> "2003-03-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:genid1 <http://purl.org/dc/terms/date> "2003-07-28" .
+_:genid1 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Added keywords property" .
+<http://purl.org/vocab/bio/0.1/> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid1 .
+_:genid2 <http://purl.org/dc/terms/date> "2004-03-05" .
+_:genid2 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Added Creative Commons license" .
+<http://purl.org/vocab/bio/0.1/> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid2 .
+_:genid3 <http://purl.org/dc/terms/date> "2005-04-01" .
+_:genid3 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Added examples" .
+<http://purl.org/vocab/bio/0.1/> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid3 .
+_:genid4 <http://purl.org/dc/terms/date> "2009-05-19" .
+_:genid4 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Minor changes to improve publishing process" .
+<http://purl.org/vocab/bio/0.1/> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid4 .
+_:genid5 <http://purl.org/dc/terms/date> "2010-04-20" .
+_:genid5 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Added change history" .
+<http://purl.org/vocab/bio/0.1/> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid5 .
+_:genid6 <http://purl.org/dc/terms/date> "2010-05-10" .
+_:genid6 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Major expansion of properties and classes" .
+<http://purl.org/vocab/bio/0.1/> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid6 .
+_:genid7 <http://purl.org/dc/terms/date> "2010-05-20" .
+_:genid7 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Batch of revisions based on community feedback" .
+<http://purl.org/vocab/bio/0.1/> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid7 .
+_:genid8 <http://purl.org/dc/terms/date> "2011-06-14" .
+_:genid8 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Expanded description and added diagrams" .
+<http://purl.org/vocab/bio/0.1/> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid8 .
+_:genid9 <http://purl.org/dc/terms/date> "2010-06-05" .
+_:genid9 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Added biography property" .
+<http://purl.org/vocab/bio/0.1/> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid9 .
+_:genid10 <http://purl.org/dc/terms/date> "2010-06-06" .
+_:genid10 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Added subproperty and equivalent property relations for bio:father, bio:mother and bio:child" .
+<http://purl.org/vocab/bio/0.1/> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid10 .
+_:genid11 <http://purl.org/dc/terms/date> "2011-06-10" .
+_:genid11 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Added bio:Formation and bio:Disbanding events" .
+<http://purl.org/vocab/bio/0.1/> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid11 .
+_:genid12 <http://purl.org/dc/terms/date> "2011-06-10" .
+_:genid12 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Added bio:Performance event" .
+<http://purl.org/vocab/bio/0.1/> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid12 .
+_:genid13 <http://purl.org/dc/terms/date> "2011-06-14" .
+_:genid13 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Added bio:Relationship class and properties" .
+<http://purl.org/vocab/bio/0.1/> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid13 .
+_:genid14 <http://purl.org/dc/terms/date> "2011-06-14" .
+_:genid14 <http://purl.org/dc/terms/creator> "Alexandre Passant" .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Added properties for Birth and Death Event types, motivated by JSON serialisations of RDF" .
+<http://purl.org/vocab/bio/0.1/> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid14 .
+<http://lists.foaf-project.org/mailman/listinfo/foaf-dev> <http://www.w3.org/2000/01/rdf-schema#label> "FOAF-DEV mailing list" .
+<http://purl.org/vocab/bio/0.1/> <http://open.vocab.org/terms/discussionList> <http://lists.foaf-project.org/mailman/listinfo/foaf-dev> .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/vocab/bio/0.1/" .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bio" .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/vocab/vann/example> <http://purl.org/vocab/bio/examples/1> .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/vocab/vann/termGroup> <http://purl.org/vocab/bio/0.1/termgroup1> .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/vocab/vann/termGroup> <http://purl.org/vocab/bio/0.1/termgroup2> .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/vocab/vann/termGroup> <http://purl.org/vocab/bio/0.1/termgroup3> .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/vocab/vann/termGroup> <http://purl.org/vocab/bio/0.1/termgroup4> .
+<http://purl.org/vocab/bio/0.1/> <http://purl.org/vocab/vann/termGroup> <http://purl.org/vocab/bio/0.1/termgroup5> .
+<http://vocab.org/bio/schema.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://web.resource.org/cc/Work> .
+<http://vocab.org/bio/schema.rdf> <http://web.resource.org/cc/license> <http://creativecommons.org/licenses/by/1.0/> .
+<http://vocab.org/bio/schema.rdf> <http://purl.org/dc/terms/type> <http://purl.org/dc/dcmitype/Text> .
+<http://creativecommons.org/licenses/by/1.0/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://web.resource.org/cc/License> .
+<http://creativecommons.org/licenses/by/1.0/> <http://web.resource.org/cc/permits> <http://web.resource.org/cc/Reproduction> .
+<http://creativecommons.org/licenses/by/1.0/> <http://web.resource.org/cc/permits> <http://web.resource.org/cc/Distribution> .
+<http://creativecommons.org/licenses/by/1.0/> <http://web.resource.org/cc/requires> <http://web.resource.org/cc/Notice> .
+<http://creativecommons.org/licenses/by/1.0/> <http://web.resource.org/cc/requires> <http://web.resource.org/cc/Attribution> .
+<http://creativecommons.org/licenses/by/1.0/> <http://web.resource.org/cc/permits> <http://web.resource.org/cc/DerivativeWorks> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/bio/0.1/father> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/bio/0.1/mother> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid17 .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid15 .
+<http://purl.org/vocab/bio/0.1/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+<http://purl.org/vocab/bio/0.1/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "An event is an occurrence that brings about a change in the state of affairs for one or more people and/or other agents. Events are assumed to occur over a period of time and may not have precise start and end points."@en .
+<http://purl.org/vocab/bio/0.1/Event> <http://purl.org/vocab/vann/usageNote> "This class is intended to describe biographical events, i.e. events in the life of a person."@en .
+<http://purl.org/vocab/bio/0.1/Event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/NET/c4dm/event.owl#Event> .
+<http://purl.org/vocab/bio/0.1/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sw.opencyc.org/2009/04/07/concept/en/Event> .
+<http://purl.org/vocab/bio/0.1/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
+<http://purl.org/vocab/bio/0.1/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/dcmitype/Event> .
+_:genid20 <http://purl.org/dc/terms/date> "2010-05-04" .
+_:genid20 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Made equivalent to cyc:Event" .
+<http://purl.org/vocab/bio/0.1/Event> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid20 .
+<http://purl.org/vocab/bio/0.1/Event> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+_:genid21 <http://purl.org/dc/terms/date> "2010-05-04" .
+_:genid21 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Marked as a stable term" .
+<http://purl.org/vocab/bio/0.1/Event> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid21 .
+_:genid22 <http://purl.org/dc/terms/date> "2010-05-20" .
+_:genid22 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Marked as testing status" .
+<http://purl.org/vocab/bio/0.1/Event> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid22 .
+_:genid23 <http://purl.org/dc/terms/date> "2010-05-20" .
+_:genid23 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Removed subclass of owl-time ProperInteval" .
+<http://purl.org/vocab/bio/0.1/Event> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid23 .
+<http://purl.org/vocab/bio/0.1/IndividualEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/IndividualEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Individual Event"@en .
+<http://purl.org/vocab/bio/0.1/IndividualEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of event that is principally about a single person, group or organization. Other agents may be involved but the event is most significant for the principal agent."@en .
+<http://purl.org/vocab/bio/0.1/IndividualEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/IndividualEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/IndividualEvent> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/bio/0.1/principal> .
+<http://purl.org/vocab/bio/0.1/IndividualEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+<http://purl.org/vocab/bio/0.1/GroupEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/GroupEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Group Event"@en .
+<http://purl.org/vocab/bio/0.1/GroupEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of event that is principally about one or more agents and their partnership. Other agents may be involved but the event is most significant for the partner agent."@en .
+<http://purl.org/vocab/bio/0.1/GroupEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/GroupEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/GroupEvent> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#minCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/bio/0.1/partner> .
+<http://purl.org/vocab/bio/0.1/GroupEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+<http://purl.org/vocab/bio/0.1/Birth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Birth> <http://www.w3.org/2000/01/rdf-schema#label> "Birth"@en .
+<http://purl.org/vocab/bio/0.1/Birth> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person entering into life."@en .
+<http://purl.org/vocab/bio/0.1/Birth> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Birth> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Birth> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+_:genid26 <http://purl.org/dc/terms/date> "2010-05-04" .
+_:genid26 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Marked as testing" .
+<http://purl.org/vocab/bio/0.1/Birth> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid26 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open.vocab.org/terms/SchemaExample> .
+_:genid27 <http://www.w3.org/2000/01/rdf-schema#label> "The birth of Albert Einstein" .
+_:genid27 <http://www.w3.org/2000/01/rdf-schema#comment> "\n        <pre><code>_:e a bio:Birth \n    ; dc:date \"1879-03-14\"\n    ; bio:principal &lt;http://dbpedia.org/resource/Albert_Einstein&gt;\n    ; bio:parent &lt;http://dbpedia.org/resource/Pauline_Koch&gt;\n    ; bio:parent &lt;http://dbpedia.org/resource/Hermann_Einstein&gt;\n    ; bio:place &lt;http://dbpedia.org/resource/Ulm&gt;\n    .</code></pre>\n        "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://purl.org/vocab/bio/0.1/Birth> <http://purl.org/vocab/vann/example> _:genid27 .
+<http://purl.org/vocab/bio/0.1/Marriage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Marriage> <http://www.w3.org/2000/01/rdf-schema#label> "Marriage"@en .
+<http://purl.org/vocab/bio/0.1/Marriage> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of creating uniting the participants into a new family unit, sometimes accompanied by a formal wedding ceremony. This is intended to cover a broad range of marriages including those given formal legal standing, common-law, or by convention. It is not restricted to marriages of two people of the opposite gender, but also includes polygamous and same-sex unions."@en .
+<http://purl.org/vocab/bio/0.1/Marriage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/GroupEvent> .
+<http://purl.org/vocab/bio/0.1/Marriage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Marriage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+_:genid28 <http://purl.org/dc/terms/date> "2010-05-04" .
+_:genid28 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Marked as a stable term" .
+<http://purl.org/vocab/bio/0.1/Marriage> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid28 .
+<http://purl.org/vocab/bio/0.1/Marriage> <http://www.w3.org/2002/07/owl#equivalentClass> <http://sw.opencyc.org/2009/04/07/concept/en/WeddingEvent_Generic> .
+_:genid29 <http://purl.org/dc/terms/date> "2010-05-04" .
+_:genid29 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Made equivalent to cyc:WeddingEvent_Generic" .
+<http://purl.org/vocab/bio/0.1/Marriage> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid29 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open.vocab.org/terms/SchemaExample> .
+_:genid30 <http://www.w3.org/2000/01/rdf-schema#label> "The marriage of Albert Einstein and Mileva Mari\u0107" .
+_:genid30 <http://www.w3.org/2000/01/rdf-schema#comment> "\n        <pre><code>_:e a bio:Marriage \n    ; dc:date \"1903\"\n    ; bio:partner &lt;http://dbpedia.org/resource/Albert_Einstein&gt;\n    ; bio:partner &lt;http://dbpedia.org/resource/Mileva_Mari%C4%87&gt;\n    ; bio:place &lt;http://dbpedia.org/resource/Bern&gt;\n    .</code></pre>\n        "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://purl.org/vocab/bio/0.1/Marriage> <http://purl.org/vocab/vann/example> _:genid30 .
+<http://purl.org/vocab/bio/0.1/Death> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Death> <http://www.w3.org/2000/01/rdf-schema#label> "Death"@en .
+<http://purl.org/vocab/bio/0.1/Death> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person's life ending."@en .
+<http://purl.org/vocab/bio/0.1/Death> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Death> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Death> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+_:genid31 <http://purl.org/dc/terms/date> "2010-05-04" .
+_:genid31 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Marked as a stable term" .
+<http://purl.org/vocab/bio/0.1/Death> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid31 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open.vocab.org/terms/SchemaExample> .
+_:genid32 <http://www.w3.org/2000/01/rdf-schema#label> "The death of Albert Einstein" .
+_:genid32 <http://www.w3.org/2000/01/rdf-schema#comment> "\n        <pre><code>_:e a bio:Death \n    ; dc:date \"1955-04-18\"\n    ; bio:principal &lt;http://dbpedia.org/resource/Albert_Einstein&gt;\n    ; bio:place &lt;http://dbpedia.org/resource/Princeton,_New_Jersey&gt;\n    .</code></pre>\n        "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://purl.org/vocab/bio/0.1/Death> <http://purl.org/vocab/vann/example> _:genid32 .
+<http://purl.org/vocab/bio/0.1/Annulment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Annulment> <http://www.w3.org/2000/01/rdf-schema#label> "Annulment"@en .
+<http://purl.org/vocab/bio/0.1/Annulment> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of declaring a marriage void from the beginning as though it never existed."@en .
+<http://purl.org/vocab/bio/0.1/Annulment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/GroupEvent> .
+<http://purl.org/vocab/bio/0.1/Annulment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Annulment> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Annulment> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Divorce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Divorce> <http://www.w3.org/2000/01/rdf-schema#label> "Divorce"@en .
+<http://purl.org/vocab/bio/0.1/Divorce> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of legally dissolving a marriage."@en .
+<http://purl.org/vocab/bio/0.1/Divorce> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/GroupEvent> .
+<http://purl.org/vocab/bio/0.1/Divorce> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Divorce> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Divorce> <http://purl.org/dc/terms/issued> "2010-05-03" .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open.vocab.org/terms/SchemaExample> .
+_:genid33 <http://www.w3.org/2000/01/rdf-schema#label> "The divorce of Albert Einstein and Mileva Mari\u0107" .
+_:genid33 <http://www.w3.org/2000/01/rdf-schema#comment> "\n        <pre><code>_:e a bio:Divorce \n    ; dc:date \"1919-02-14\"\n    ; bio:partner &lt;http://dbpedia.org/resource/Albert_Einstein&gt;\n    ; bio:partner &lt;http://dbpedia.org/resource/Mileva_Mari%C4%87&gt;\n    ; bio:place &lt;http://dbpedia.org/resource/Zurich&gt;\n    .</code></pre>\n        "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://purl.org/vocab/bio/0.1/Divorce> <http://purl.org/vocab/vann/example> _:genid33 .
+<http://purl.org/vocab/bio/0.1/Funeral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Funeral> <http://www.w3.org/2000/01/rdf-schema#label> "Funeral"@en .
+<http://purl.org/vocab/bio/0.1/Funeral> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of marking a person's death with a ceremony."@en .
+<http://purl.org/vocab/bio/0.1/Funeral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Funeral> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Funeral> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Funeral> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Burial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Burial> <http://www.w3.org/2000/01/rdf-schema#label> "Burial"@en .
+<http://purl.org/vocab/bio/0.1/Burial> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of interring the remains of a person's body into the ground."@en .
+<http://purl.org/vocab/bio/0.1/Burial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Burial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Burial> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Burial> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Cremation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Cremation> <http://www.w3.org/2000/01/rdf-schema#label> "Cremation"@en .
+<http://purl.org/vocab/bio/0.1/Cremation> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of disposing of the remains of a person's body by fire."@en .
+<http://purl.org/vocab/bio/0.1/Cremation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Cremation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Cremation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Cremation> <http://purl.org/dc/terms/issued> "2010-05-03" .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open.vocab.org/terms/SchemaExample> .
+_:genid34 <http://www.w3.org/2000/01/rdf-schema#label> "The cremation of Albert Einstein" .
+_:genid34 <http://www.w3.org/2000/01/rdf-schema#comment> "\n        <pre><code>_:e a bio:Cremation \n    ; dc:date \"1955-04-18\"\n    ; bio:principal &lt;http://dbpedia.org/resource/Albert_Einstein&gt;\n    ; bio:place &lt;http://dbpedia.org/resource/Princeton,_New_Jersey&gt;\n    .</code></pre>\n        "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://purl.org/vocab/bio/0.1/Cremation> <http://purl.org/vocab/vann/example> _:genid34 .
+<http://purl.org/vocab/bio/0.1/Adoption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Adoption> <http://www.w3.org/2000/01/rdf-schema#label> "Adoption"@en .
+<http://purl.org/vocab/bio/0.1/Adoption> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of creating of a legal parent/child relationship that does not exist biologically."@en .
+<http://purl.org/vocab/bio/0.1/Adoption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Adoption> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Adoption> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Adoption> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Baptism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Baptism> <http://www.w3.org/2000/01/rdf-schema#label> "Baptism"@en .
+<http://purl.org/vocab/bio/0.1/Baptism> <http://www.w3.org/2000/01/rdf-schema#comment> "The ceremonial event held to admit a person to membership of a Christian church."@en .
+<http://purl.org/vocab/bio/0.1/Baptism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Baptism> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Baptism> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+_:genid35 <http://purl.org/dc/terms/date> "2010-05-20" .
+_:genid35 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Revised comment, replacing 'the Christian church' with 'a Christian church'" .
+<http://purl.org/vocab/bio/0.1/Baptism> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid35 .
+<http://purl.org/vocab/bio/0.1/Baptism> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/BarMitzvah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/BarMitzvah> <http://www.w3.org/2000/01/rdf-schema#label> "BarMitzvah"@en .
+<http://purl.org/vocab/bio/0.1/BarMitzvah> <http://www.w3.org/2000/01/rdf-schema#comment> "The ceremonial event held when a Jewish boy reaches age 13."@en .
+<http://purl.org/vocab/bio/0.1/BarMitzvah> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/BarMitzvah> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/BarMitzvah> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/BarMitzvah> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/BasMitzvah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/BasMitzvah> <http://www.w3.org/2000/01/rdf-schema#label> "BasMitzvah"@en .
+<http://purl.org/vocab/bio/0.1/BasMitzvah> <http://www.w3.org/2000/01/rdf-schema#comment> "The ceremonial event held when a Jewish girl reaching age 13, also known as \"Bat Mitzvah.\""@en .
+<http://purl.org/vocab/bio/0.1/BasMitzvah> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/BasMitzvah> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/BasMitzvah> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/BasMitzvah> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Execution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Execution> <http://www.w3.org/2000/01/rdf-schema#label> "Execution"@en .
+<http://purl.org/vocab/bio/0.1/Execution> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person being deliberately killed as punishment."@en .
+<http://purl.org/vocab/bio/0.1/Execution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/Death> .
+<http://purl.org/vocab/bio/0.1/Execution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Execution> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Execution> <http://purl.org/dc/terms/issued> "2010-05-05" .
+<http://purl.org/vocab/bio/0.1/Assassination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Assassination> <http://www.w3.org/2000/01/rdf-schema#label> "Assassination"@en .
+<http://purl.org/vocab/bio/0.1/Assassination> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person being deliberately targeted and killed."@en .
+<http://purl.org/vocab/bio/0.1/Assassination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/Murder> .
+<http://purl.org/vocab/bio/0.1/Assassination> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Assassination> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Assassination> <http://purl.org/dc/terms/issued> "2010-05-05" .
+<http://purl.org/vocab/bio/0.1/Murder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Murder> <http://www.w3.org/2000/01/rdf-schema#label> "Murder"@en .
+<http://purl.org/vocab/bio/0.1/Murder> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person being killed unlawfully with intent by the killer."@en .
+<http://purl.org/vocab/bio/0.1/Murder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/Death> .
+<http://purl.org/vocab/bio/0.1/Murder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Murder> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Murder> <http://purl.org/dc/terms/issued> "2010-05-05" .
+<http://purl.org/vocab/bio/0.1/Ordination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Ordination> <http://www.w3.org/2000/01/rdf-schema#label> "Ordination"@en .
+<http://purl.org/vocab/bio/0.1/Ordination> <http://www.w3.org/2000/01/rdf-schema#comment> "The ceremonial event held when a person receives authority to act in religious matters."@en .
+<http://purl.org/vocab/bio/0.1/Ordination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Ordination> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Ordination> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Ordination> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Naturalization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Naturalization> <http://www.w3.org/2000/01/rdf-schema#label> "Naturalization"@en .
+<http://purl.org/vocab/bio/0.1/Naturalization> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person obtaining citizenship. Note that the place the naturalization event occurs at may be different from the state the person is obtaining citizenship of. "@en .
+<http://purl.org/vocab/bio/0.1/Naturalization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Naturalization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Naturalization> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Naturalization> <http://purl.org/dc/terms/issued> "2010-05-03" .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open.vocab.org/terms/SchemaExample> .
+_:genid36 <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein becoming a citizen of the United States" .
+_:genid36 <http://www.w3.org/2000/01/rdf-schema#comment> "\n        <pre><code>_:e a bio:Emigration \n    ; dc:date \"1940\"\n    ; bio:principal &lt;http://dbpedia.org/resource/Albert_Einstein&gt;\n    ; bio:state &lt;http://dbpedia.org/resource/United_States&gt;\n    .</code></pre>\n        "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://purl.org/vocab/bio/0.1/Naturalization> <http://purl.org/vocab/vann/example> _:genid36 .
+<http://purl.org/vocab/bio/0.1/Emigration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Emigration> <http://www.w3.org/2000/01/rdf-schema#label> "Emigration"@en .
+<http://purl.org/vocab/bio/0.1/Emigration> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person leaving their homeland with the intent of residing elsewhere."@en .
+<http://purl.org/vocab/bio/0.1/Emigration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Emigration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Emigration> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Emigration> <http://purl.org/dc/terms/issued> "2010-05-03" .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open.vocab.org/terms/SchemaExample> .
+_:genid37 <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein emigrating to the United States" .
+_:genid37 <http://www.w3.org/2000/01/rdf-schema#comment> "\n        <pre><code>_:e a bio:Emigration \n    ; dc:date \"1933\"^^xsd:gYear\n    ; bio:principal &lt;http://dbpedia.org/resource/Albert_Einstein&gt;\n    ; bio:state &lt;http://dbpedia.org/resource/United_States&gt;\n    .</code></pre>\n        "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://purl.org/vocab/bio/0.1/Emigration> <http://purl.org/vocab/vann/example> _:genid37 .
+<http://purl.org/vocab/bio/0.1/Enrolment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Enrolment> <http://www.w3.org/2000/01/rdf-schema#label> "Enrolment"@en .
+<http://purl.org/vocab/bio/0.1/Enrolment> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person initiating attendence to a school or other place of learning."@en .
+<http://purl.org/vocab/bio/0.1/Enrolment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Enrolment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Enrolment> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Enrolment> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Graduation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Graduation> <http://www.w3.org/2000/01/rdf-schema#label> "Graduation"@en .
+<http://purl.org/vocab/bio/0.1/Graduation> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person being awarded educational diplomas or degrees."@en .
+<http://purl.org/vocab/bio/0.1/Graduation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Graduation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Graduation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Graduation> <http://purl.org/dc/terms/issued> "2010-05-03" .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open.vocab.org/terms/SchemaExample> .
+_:genid38 <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein receiving his Doctorate from the University of Zurich" .
+_:genid38 <http://www.w3.org/2000/01/rdf-schema#comment> "\n        <pre><code>_:e a bio:Graduation \n    ; dc:date \"1905\"^^xsd:gYear\n    ; bio:principal &lt;http://dbpedia.org/resource/Albert_Einstein&gt;\n    ; bio:organization &lt;http://dbpedia.org/resource/University_of_Zurich&gt;\n    .</code></pre>\n        "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://purl.org/vocab/bio/0.1/Graduation> <http://purl.org/vocab/vann/example> _:genid38 .
+<http://purl.org/vocab/bio/0.1/Imprisonment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Imprisonment> <http://www.w3.org/2000/01/rdf-schema#label> "Imprisonment"@en .
+<http://purl.org/vocab/bio/0.1/Imprisonment> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person being detained in a jail or prison."@en .
+<http://purl.org/vocab/bio/0.1/Imprisonment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Imprisonment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Imprisonment> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Imprisonment> <http://purl.org/dc/terms/issued> "2010-05-04" .
+<http://purl.org/vocab/bio/0.1/Employment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Employment> <http://www.w3.org/2000/01/rdf-schema#label> "Employment"@en .
+<http://purl.org/vocab/bio/0.1/Employment> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person entering an occupational relationship with an employer."@en .
+<http://purl.org/vocab/bio/0.1/Employment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Employment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Employment> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Employment> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/PositionChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/PositionChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of Position"@en .
+<http://purl.org/vocab/bio/0.1/PositionChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person changing the position they hold with an employer."@en .
+<http://purl.org/vocab/bio/0.1/PositionChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/PositionChange> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/PositionChange> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/PositionChange> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/NameChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/NameChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of Name"@en .
+<http://purl.org/vocab/bio/0.1/NameChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person changing their name."@en .
+<http://purl.org/vocab/bio/0.1/NameChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/NameChange> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/NameChange> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/NameChange> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Promotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Promotion> <http://www.w3.org/2000/01/rdf-schema#label> "Promotion"@en .
+<http://purl.org/vocab/bio/0.1/Promotion> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person changing the position they hold with an employer to one with more importance or responsibility."@en .
+<http://purl.org/vocab/bio/0.1/Promotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/PositionChange> .
+<http://purl.org/vocab/bio/0.1/Promotion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Promotion> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Promotion> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Demotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Demotion> <http://www.w3.org/2000/01/rdf-schema#label> "Demotion"@en .
+<http://purl.org/vocab/bio/0.1/Demotion> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person changing the position they hold with an employer to one with less importance or responsibility."@en .
+<http://purl.org/vocab/bio/0.1/Demotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/PositionChange> .
+<http://purl.org/vocab/bio/0.1/Demotion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Demotion> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Demotion> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Retirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Retirement> <http://www.w3.org/2000/01/rdf-schema#label> "Retirement"@en .
+<http://purl.org/vocab/bio/0.1/Retirement> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person exiting an occupational relationship with an employer after a qualifying time period. In many cultures retirement is expected and even required once the person reaches a particular age."@en .
+<http://purl.org/vocab/bio/0.1/Retirement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Retirement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Retirement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Retirement> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Resignation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Resignation> <http://www.w3.org/2000/01/rdf-schema#label> "Resignation"@en .
+<http://purl.org/vocab/bio/0.1/Resignation> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person voluntarily giving up or quitting their office or position."@en .
+<http://purl.org/vocab/bio/0.1/Resignation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Resignation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Resignation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Resignation> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Dismissal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Dismissal> <http://www.w3.org/2000/01/rdf-schema#label> "Dismissal"@en .
+<http://purl.org/vocab/bio/0.1/Dismissal> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person involuntarily giving up their office or position. Dismissal is often perceived to be the employee's fault and may be considered disgraceful."@en .
+<http://purl.org/vocab/bio/0.1/Dismissal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Dismissal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Dismissal> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Dismissal> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Redundancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Redundancy> <http://www.w3.org/2000/01/rdf-schema#label> "Redundancy"@en .
+<http://purl.org/vocab/bio/0.1/Redundancy> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person involuntarily giving up an office or position that is no longer needed. Redundancy is usually perceived to be the employer's fault and is usually due to conditions outside of the employee's control."@en .
+<http://purl.org/vocab/bio/0.1/Redundancy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Redundancy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Redundancy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Redundancy> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Investiture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Investiture> <http://www.w3.org/2000/01/rdf-schema#label> "Investiture"@en .
+<http://purl.org/vocab/bio/0.1/Investiture> <http://www.w3.org/2000/01/rdf-schema#comment> "The ceremonial event of a person taking a public office or honour."@en .
+<http://purl.org/vocab/bio/0.1/Investiture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Investiture> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Investiture> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Investiture> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Inauguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Inauguration> <http://www.w3.org/2000/01/rdf-schema#label> "Inauguration"@en .
+<http://purl.org/vocab/bio/0.1/Inauguration> <http://www.w3.org/2000/01/rdf-schema#comment> "The ceremonial event marking the beginning of a person's term of office as a leader."@en .
+<http://purl.org/vocab/bio/0.1/Inauguration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Inauguration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Inauguration> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Inauguration> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Accession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Accession> <http://www.w3.org/2000/01/rdf-schema#label> "Accession"@en .
+<http://purl.org/vocab/bio/0.1/Accession> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a person succeeding to the right to hold regal power. This event is often automatic on the death of the previous monarch and is usually followed by a coronation event."@en .
+<http://purl.org/vocab/bio/0.1/Accession> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Accession> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Accession> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Accession> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Coronation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Coronation> <http://www.w3.org/2000/01/rdf-schema#label> "Coronation"@en .
+<http://purl.org/vocab/bio/0.1/Coronation> <http://www.w3.org/2000/01/rdf-schema#comment> "The ceremonial event of a person being invested with regal power to become a monarch."@en .
+<http://purl.org/vocab/bio/0.1/Coronation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Coronation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Coronation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Coronation> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Formation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Formation> <http://www.w3.org/2000/01/rdf-schema#label> "Formation"@en .
+<http://purl.org/vocab/bio/0.1/Formation> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a group or organization coming into being."@en .
+<http://purl.org/vocab/bio/0.1/Formation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Formation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Formation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Formation> <http://purl.org/dc/terms/issued> "2011-06-10" .
+<http://purl.org/vocab/bio/0.1/Disbanding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Disbanding> <http://www.w3.org/2000/01/rdf-schema#label> "Disbanding"@en .
+<http://purl.org/vocab/bio/0.1/Disbanding> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of a group or organization being disbanded."@en .
+<http://purl.org/vocab/bio/0.1/Disbanding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/Disbanding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Disbanding> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Disbanding> <http://purl.org/dc/terms/issued> "2011-06-10" .
+<http://purl.org/vocab/bio/0.1/Performance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Performance> <http://www.w3.org/2000/01/rdf-schema#label> "Performance"@en .
+<http://purl.org/vocab/bio/0.1/Performance> <http://www.w3.org/2000/01/rdf-schema#comment> "The event of an individual or a group of performers performing. Examples include concerts, plays, recitals, recordings, busking etc."@en .
+<http://purl.org/vocab/bio/0.1/Performance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/bio/0.1/GroupEvent> .
+<http://purl.org/vocab/bio/0.1/Performance> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/ontology/mo/Performance> .
+<http://purl.org/vocab/bio/0.1/Performance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Performance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Performance> <http://purl.org/dc/terms/issued> "2011-06-12" .
+<http://purl.org/vocab/bio/0.1/Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Interval> <http://www.w3.org/2000/01/rdf-schema#label> "Interval"@en .
+<http://purl.org/vocab/bio/0.1/Interval> <http://www.w3.org/2000/01/rdf-schema#comment> "A extended interval of time related to a particular state of affairs, such as the lifespan of a person or a period of employment."@en .
+<http://purl.org/vocab/bio/0.1/Interval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Interval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#ProperInterval> .
+<http://purl.org/vocab/bio/0.1/Interval> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Interval> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/Relationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/bio/0.1/Relationship> <http://www.w3.org/2000/01/rdf-schema#label> "Agent Relationship"@en .
+<http://purl.org/vocab/bio/0.1/Relationship> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular type of connection existing between people, groups or organizations related to or having dealings with each other."@en .
+<http://purl.org/vocab/bio/0.1/Relationship> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/Relationship> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/vocab/relationship/Relationship> .
+<http://purl.org/vocab/bio/0.1/Relationship> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/Relationship> <http://purl.org/dc/terms/issued> "2011-06-14" .
+<http://purl.org/vocab/bio/0.1/olb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/olb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/vocab/bio/0.1/olb> <http://www.w3.org/2000/01/rdf-schema#label> "One-line bio"@en .
+<http://purl.org/vocab/bio/0.1/olb> <http://www.w3.org/2000/01/rdf-schema#comment> "A one-line biography of the person."@en .
+<http://purl.org/vocab/bio/0.1/olb> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/olb> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/vocab/bio/0.1/olb> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+_:genid39 <http://purl.org/dc/terms/date> "2010-05-03" .
+_:genid39 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Declared that this is a datatype property" .
+<http://purl.org/vocab/bio/0.1/olb> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid39 .
+<http://purl.org/vocab/bio/0.1/olb> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+_:genid40 <http://purl.org/dc/terms/date> "2010-05-04" .
+_:genid40 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Marked as a stable term" .
+<http://purl.org/vocab/bio/0.1/olb> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid40 .
+<http://purl.org/vocab/bio/0.1/keywords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/keywords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/vocab/bio/0.1/keywords> <http://www.w3.org/2000/01/rdf-schema#label> "Key Words"@en .
+<http://purl.org/vocab/bio/0.1/keywords> <http://www.w3.org/2000/01/rdf-schema#comment> "A comma delimited list of key words that describe a person."@en .
+<http://purl.org/vocab/bio/0.1/keywords> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/keywords> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/vocab/bio/0.1/keywords> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/keywords> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/subject> .
+<http://purl.org/vocab/bio/0.1/keywords> <http://purl.org/dc/terms/issued> "2003-07-28" .
+_:genid41 <http://purl.org/dc/terms/date> "2010-05-03" .
+_:genid41 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Declared that this is a datatype property" .
+<http://purl.org/vocab/bio/0.1/keywords> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid41 .
+<http://purl.org/vocab/bio/0.1/keywords> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+_:genid42 <http://purl.org/dc/terms/date> "2010-05-04" .
+_:genid42 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Marked as a stable term" .
+<http://purl.org/vocab/bio/0.1/keywords> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid42 .
+<http://purl.org/vocab/bio/0.1/biography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/biography> <http://www.w3.org/2000/01/rdf-schema#label> "Biography"@en .
+<http://purl.org/vocab/bio/0.1/biography> <http://www.w3.org/2000/01/rdf-schema#comment> "An extended description or account of someone's life."@en .
+<http://purl.org/vocab/bio/0.1/biography> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/biography> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/biography> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/biography> <http://purl.org/dc/terms/issued> "2010-06-05" .
+<http://purl.org/vocab/bio/0.1/biography> <http://purl.org/vocab/vann/usageNote> "<p>It is expected that the value of this property is either a literal formatted with HTML markup or a pointer to an HTML document.</p>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://purl.org/vocab/bio/0.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/date> <http://www.w3.org/2000/01/rdf-schema#label> "Date"@en .
+<http://purl.org/vocab/bio/0.1/date> <http://purl.org/net/vocab/2004/03/label#plural> "Dates"@en .
+<http://purl.org/vocab/bio/0.1/date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date at which an event occurred."@en .
+<http://purl.org/vocab/bio/0.1/date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/date> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/date> .
+<http://purl.org/vocab/bio/0.1/date> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/date> <http://purl.org/vocab/vann/usageNote> "<p>The date should be formatted as specified in <a href=\"http://www.w3.org/TR/NOTE-datetime\">ISO8601</a>.\n    For example: 2003-03-15 corresponds to the 15th March 2003, and 2003-03-15T13:21-05:00 corresponds to 15th March 2003, 8:21 am, US Eastern Standard Time.</p>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:genid43 <http://purl.org/dc/terms/date> "2010-05-03" .
+_:genid43 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Added a plural label" .
+<http://purl.org/vocab/bio/0.1/date> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid43 .
+<http://purl.org/vocab/bio/0.1/date> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+_:genid44 <http://purl.org/dc/terms/date> "2010-05-04" .
+_:genid44 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Marked as a stable term" .
+<http://purl.org/vocab/bio/0.1/date> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid44 .
+<http://purl.org/vocab/bio/0.1/place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+<http://purl.org/vocab/bio/0.1/place> <http://purl.org/net/vocab/2004/03/label#plural> "Places"@en .
+<http://purl.org/vocab/bio/0.1/place> <http://www.w3.org/2000/01/rdf-schema#comment> "The place at which an event occurred."@en .
+<http://purl.org/vocab/bio/0.1/place> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+_:genid45 <http://purl.org/dc/terms/date> "2010-05-03" .
+_:genid45 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Added a plural label" .
+<http://purl.org/vocab/bio/0.1/place> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid45 .
+<http://purl.org/vocab/bio/0.1/place> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+_:genid46 <http://purl.org/dc/terms/date> "2010-05-04" .
+_:genid46 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Marked as a stable term" .
+<http://purl.org/vocab/bio/0.1/place> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid46 .
+<http://purl.org/vocab/bio/0.1/position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/position> <http://www.w3.org/2000/01/rdf-schema#label> "Position"@en .
+<http://purl.org/vocab/bio/0.1/position> <http://purl.org/net/vocab/2004/03/label#plural> "Positions"@en .
+<http://purl.org/vocab/bio/0.1/position> <http://www.w3.org/2000/01/rdf-schema#comment> "The employment position or public office involved in an event."@en .
+<http://purl.org/vocab/bio/0.1/position> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/position> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/position> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/position> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/agent> .
+<http://purl.org/vocab/bio/0.1/position> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/position> <http://purl.org/dc/terms/issued> "2010-05-05" .
+<http://purl.org/vocab/bio/0.1/eventInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/eventInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/eventInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Event Interval"@en .
+<http://purl.org/vocab/bio/0.1/eventInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "The interval during which the event occurs. This interval represents the exact interval of occurence for an event, it starts at the moment the event commences and finishes when the event concludes. In other words both the event and the interval start at the same instant of time and extend for the same duration."@en .
+<http://purl.org/vocab/bio/0.1/eventInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/eventInterval> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/bio/0.1/Interval> .
+<http://purl.org/vocab/bio/0.1/eventInterval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/eventInterval> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/eventInterval> <http://purl.org/dc/terms/issued> "2010-06-05" .
+<http://purl.org/vocab/bio/0.1/father> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/father> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/father> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/vocab/bio/0.1/father> <http://www.w3.org/2000/01/rdf-schema#label> "Father"@en .
+<http://purl.org/vocab/bio/0.1/father> <http://www.w3.org/2000/01/rdf-schema#comment> "The biological father of a person, also known as the genitor."@en .
+<http://purl.org/vocab/bio/0.1/father> <http://purl.org/vocab/vann/usageNote> "Note that this is a strict definition of father that does not include non-biological relationships. The <a href=\"http://purl.org/vocab/relationship\">Relationship</a> vocabulary may be more suitable for broader types of parent/child relation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://purl.org/vocab/bio/0.1/father> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/father> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/father> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/father> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+<http://purl.org/vocab/bio/0.1/father> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/relationship/childOf> .
+_:genid47 <http://purl.org/dc/terms/date> "2010-06-06" .
+_:genid47 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Made subproperty of rel:childOf on suggestion of Gautier Poupeau" .
+<http://purl.org/vocab/bio/0.1/father> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid47 .
+<http://purl.org/vocab/bio/0.1/father> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/father> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/mother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/mother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/mother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/vocab/bio/0.1/mother> <http://www.w3.org/2000/01/rdf-schema#label> "Mother"@en .
+<http://purl.org/vocab/bio/0.1/mother> <http://www.w3.org/2000/01/rdf-schema#comment> "The biological mother of a person, also known as the genetrix."@en .
+<http://purl.org/vocab/bio/0.1/mother> <http://purl.org/vocab/vann/usageNote> "Note that this is a strict definition of mother that does not include non-biological relationships. The <a href=\"http://purl.org/vocab/relationship\">Relationship</a> vocabulary may be more suitable for broader types of parent/child relation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://purl.org/vocab/bio/0.1/mother> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/mother> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/mother> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/mother> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+<http://purl.org/vocab/bio/0.1/mother> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/relationship/childOf> .
+_:genid48 <http://purl.org/dc/terms/date> "2010-06-06" .
+_:genid48 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Made subproperty of rel:childOf on suggestion of Gautier Poupeau" .
+<http://purl.org/vocab/bio/0.1/mother> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid48 .
+<http://purl.org/vocab/bio/0.1/mother> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/mother> <http://purl.org/dc/terms/issued> "2010-05-03" .
+<http://purl.org/vocab/bio/0.1/child> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/child> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/child> <http://www.w3.org/2000/01/rdf-schema#label> "Child"@en .
+<http://purl.org/vocab/bio/0.1/child> <http://purl.org/net/vocab/2004/03/label#plural> "Children"@en .
+<http://purl.org/vocab/bio/0.1/child> <http://www.w3.org/2000/01/rdf-schema#comment> "A biological child of a person. "@en .
+<http://purl.org/vocab/bio/0.1/child> <http://purl.org/vocab/vann/usageNote> "Note that this is a strict definition of child that does not include adopted children, step-children or similar non-biological relationships. The <a href=\"http://purl.org/vocab/relationship\">Relationship</a> vocabulary may be more suitable for broader types of parent/child relation."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://purl.org/vocab/bio/0.1/child> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/child> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/child> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/child> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+<http://purl.org/vocab/bio/0.1/child> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.org/vocab/relationship/parentOf> .
+<http://purl.org/vocab/bio/0.1/child> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/child> <http://purl.org/dc/terms/issued> "2010-05-03" .
+_:genid49 <http://purl.org/dc/terms/date> "2010-06-06" .
+_:genid49 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Made equivalent to rel:parentOf on suggestion of Gautier Poupeau" .
+<http://purl.org/vocab/bio/0.1/child> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid49 .
+<http://purl.org/vocab/bio/0.1/precedingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/precedingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/precedingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.org/vocab/bio/0.1/precedingEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Preceding Event"@en .
+<http://purl.org/vocab/bio/0.1/precedingEvent> <http://purl.org/net/vocab/2004/03/label#plural> "Preceding Events"@en .
+<http://purl.org/vocab/bio/0.1/precedingEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An event that occurs and concludes at some time before this event."@en .
+<http://purl.org/vocab/bio/0.1/precedingEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/precedingEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/precedingEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/precedingEvent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+<http://purl.org/vocab/bio/0.1/precedingEvent> <http://purl.org/dc/terms/issued> "2010-05-06" .
+<http://purl.org/vocab/bio/0.1/immediatelyPrecedingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/immediatelyPrecedingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/immediatelyPrecedingEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Immediately Preceding Event"@en .
+<http://purl.org/vocab/bio/0.1/immediatelyPrecedingEvent> <http://purl.org/net/vocab/2004/03/label#plural> "Immediately Preceding Events"@en .
+<http://purl.org/vocab/bio/0.1/immediatelyPrecedingEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An event that occurs and concludes immediately before this event."@en .
+<http://purl.org/vocab/bio/0.1/immediatelyPrecedingEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/immediatelyPrecedingEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/immediatelyPrecedingEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/immediatelyPrecedingEvent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+<http://purl.org/vocab/bio/0.1/immediatelyPrecedingEvent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/precedingEvent> .
+<http://purl.org/vocab/bio/0.1/immediatelyPrecedingEvent> <http://purl.org/dc/terms/issued> "2010-05-06" .
+<http://purl.org/vocab/bio/0.1/followingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/followingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/followingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.org/vocab/bio/0.1/followingEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Following Event"@en .
+<http://purl.org/vocab/bio/0.1/followingEvent> <http://purl.org/net/vocab/2004/03/label#plural> "Following Events"@en .
+<http://purl.org/vocab/bio/0.1/followingEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An event that starts at some time after this event."@en .
+<http://purl.org/vocab/bio/0.1/followingEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/followingEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/followingEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/followingEvent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+<http://purl.org/vocab/bio/0.1/followingEvent> <http://purl.org/dc/terms/issued> "2010-05-06" .
+<http://purl.org/vocab/bio/0.1/immediatelyFollowingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/immediatelyFollowingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/immediatelyFollowingEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Immediately Following Event"@en .
+<http://purl.org/vocab/bio/0.1/immediatelyFollowingEvent> <http://purl.org/net/vocab/2004/03/label#plural> "Immediately Following Events"@en .
+<http://purl.org/vocab/bio/0.1/immediatelyFollowingEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An event that starts immediately after this event."@en .
+<http://purl.org/vocab/bio/0.1/immediatelyFollowingEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/immediatelyFollowingEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/immediatelyFollowingEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/immediatelyFollowingEvent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+<http://purl.org/vocab/bio/0.1/immediatelyFollowingEvent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/followingEvent> .
+<http://purl.org/vocab/bio/0.1/immediatelyFollowingEvent> <http://purl.org/dc/terms/issued> "2010-05-06" .
+<http://purl.org/vocab/bio/0.1/concurrentEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/concurrentEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/concurrentEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://purl.org/vocab/bio/0.1/concurrentEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Concurrent Event"@en .
+<http://purl.org/vocab/bio/0.1/concurrentEvent> <http://purl.org/net/vocab/2004/03/label#plural> "Concurrent Events"@en .
+<http://purl.org/vocab/bio/0.1/concurrentEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An event that occurs while this event is occurring. The events need not start or conclude at the same times."@en .
+<http://purl.org/vocab/bio/0.1/concurrentEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/concurrentEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/concurrentEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/concurrentEvent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+<http://purl.org/vocab/bio/0.1/concurrentEvent> <http://purl.org/dc/terms/issued> "2010-05-06" .
+<http://purl.org/vocab/bio/0.1/initiatingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/initiatingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/initiatingEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Initiating Event"@en .
+<http://purl.org/vocab/bio/0.1/initiatingEvent> <http://purl.org/net/vocab/2004/03/label#plural> "Initiating Event"@en .
+<http://purl.org/vocab/bio/0.1/initiatingEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An event that marks the start of an interval and/or relationship. The event contributes to and/or causes of the state of affairs that hold during the interval. For example a period of study may be initiated by an Enrolment event."@en .
+<http://purl.org/vocab/bio/0.1/initiatingEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/initiatingEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/initiatingEvent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+<http://purl.org/vocab/bio/0.1/initiatingEvent> <http://purl.org/dc/terms/issued> "2010-05-06" .
+<http://purl.org/vocab/bio/0.1/concludingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/concludingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/concludingEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Concluding Event"@en .
+<http://purl.org/vocab/bio/0.1/concludingEvent> <http://purl.org/net/vocab/2004/03/label#plural> "Concluding Event"@en .
+<http://purl.org/vocab/bio/0.1/concludingEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An event that marks the end of an interval and/or relationship. The event changes of the state of affairs that held during the interval. For example a period of study may be concluded by a Graduation event."@en .
+<http://purl.org/vocab/bio/0.1/concludingEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/concludingEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/concludingEvent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+<http://purl.org/vocab/bio/0.1/concludingEvent> <http://purl.org/dc/terms/issued> "2010-05-06" .
+<http://purl.org/vocab/bio/0.1/agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@en .
+<http://purl.org/vocab/bio/0.1/agent> <http://purl.org/net/vocab/2004/03/label#plural> "Agents"@en .
+<http://purl.org/vocab/bio/0.1/agent> <http://www.w3.org/2000/01/rdf-schema#comment> "A person, organization or group that plays a role in an event."@en .
+<http://purl.org/vocab/bio/0.1/agent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/agent> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/vocab/bio/0.1/agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/agent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+<http://purl.org/vocab/bio/0.1/agent> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/bio/0.1/event> .
+<http://purl.org/vocab/bio/0.1/agent> <http://purl.org/dc/terms/issued> "2010-05-05" .
+<http://purl.org/vocab/bio/0.1/employer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/employer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/employer> <http://www.w3.org/2000/01/rdf-schema#label> "Employer"@en .
+<http://purl.org/vocab/bio/0.1/employer> <http://purl.org/net/vocab/2004/03/label#plural> "Employers"@en .
+<http://purl.org/vocab/bio/0.1/employer> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent that is involved in an event as an employer."@en .
+<http://purl.org/vocab/bio/0.1/employer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/employer> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/vocab/bio/0.1/employer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/employer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/agent> .
+<http://purl.org/vocab/bio/0.1/employer> <http://purl.org/dc/terms/issued> "2010-05-05" .
+<http://purl.org/vocab/bio/0.1/state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/state> <http://www.w3.org/2000/01/rdf-schema#label> "State"@en .
+<http://purl.org/vocab/bio/0.1/state> <http://purl.org/net/vocab/2004/03/label#plural> "States"@en .
+<http://purl.org/vocab/bio/0.1/state> <http://www.w3.org/2000/01/rdf-schema#comment> "A country or independent territory that is involved in an event."@en .
+<http://purl.org/vocab/bio/0.1/state> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/state> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/state> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/agent> .
+<http://purl.org/vocab/bio/0.1/state> <http://purl.org/dc/terms/issued> "2010-05-05" .
+<http://purl.org/vocab/bio/0.1/parent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/parent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/parent> <http://www.w3.org/2000/01/rdf-schema#label> "Parent"@en .
+<http://purl.org/vocab/bio/0.1/parent> <http://purl.org/net/vocab/2004/03/label#plural> "Parents"@en .
+<http://purl.org/vocab/bio/0.1/parent> <http://www.w3.org/2000/01/rdf-schema#comment> "A person that takes the parent role in an event."@en .
+<http://purl.org/vocab/bio/0.1/parent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/parent> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/parent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/parent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/agent> .
+<http://purl.org/vocab/bio/0.1/parent> <http://purl.org/dc/terms/issued> "2010-05-05" .
+<http://purl.org/vocab/bio/0.1/principal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/principal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/principal> <http://www.w3.org/2000/01/rdf-schema#label> "Principal"@en .
+<http://purl.org/vocab/bio/0.1/principal> <http://purl.org/net/vocab/2004/03/label#plural> "Principals"@en .
+<http://purl.org/vocab/bio/0.1/principal> <http://www.w3.org/2000/01/rdf-schema#comment> "A person that takes the primary and most important role in an event. For example the principal in a Birth event would be the child being born and the principal in a Burial event would be the deceased person."@en .
+<http://purl.org/vocab/bio/0.1/principal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/principal> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/principal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/principal> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/agent> .
+<http://purl.org/vocab/bio/0.1/principal> <http://purl.org/dc/terms/issued> "2010-05-05" .
+<http://purl.org/vocab/bio/0.1/partner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/partner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/partner> <http://www.w3.org/2000/01/rdf-schema#label> "Partner"@en .
+<http://purl.org/vocab/bio/0.1/partner> <http://purl.org/net/vocab/2004/03/label#plural> "Partners"@en .
+<http://purl.org/vocab/bio/0.1/partner> <http://www.w3.org/2000/01/rdf-schema#comment> "A person that is involved in a event as a partner in a relationship."@en .
+<http://purl.org/vocab/bio/0.1/partner> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/partner> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/partner> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/partner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/agent> .
+<http://purl.org/vocab/bio/0.1/partner> <http://purl.org/dc/terms/issued> "2010-05-05" .
+<http://purl.org/vocab/bio/0.1/officiator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/officiator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/officiator> <http://www.w3.org/2000/01/rdf-schema#label> "Officiator"@en .
+<http://purl.org/vocab/bio/0.1/officiator> <http://purl.org/net/vocab/2004/03/label#plural> "Officiators"@en .
+<http://purl.org/vocab/bio/0.1/officiator> <http://www.w3.org/2000/01/rdf-schema#comment> "A person that officiates at a ceremonial event."@en .
+<http://purl.org/vocab/bio/0.1/officiator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/officiator> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/officiator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/officiator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/agent> .
+<http://purl.org/vocab/bio/0.1/officiator> <http://purl.org/dc/terms/issued> "2010-05-05" .
+<http://purl.org/vocab/bio/0.1/witness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/witness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/witness> <http://www.w3.org/2000/01/rdf-schema#label> "Witness"@en .
+<http://purl.org/vocab/bio/0.1/witness> <http://purl.org/net/vocab/2004/03/label#plural> "Witnesses"@en .
+<http://purl.org/vocab/bio/0.1/witness> <http://www.w3.org/2000/01/rdf-schema#comment> "A person that witnesses and can bear testimony to the occurrence of an event."@en .
+<http://purl.org/vocab/bio/0.1/witness> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/witness> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/witness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/witness> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/spectator> .
+<http://purl.org/vocab/bio/0.1/witness> <http://purl.org/dc/terms/issued> "2010-05-05" .
+<http://purl.org/vocab/bio/0.1/spectator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/spectator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/spectator> <http://www.w3.org/2000/01/rdf-schema#label> "Spectator"@en .
+<http://purl.org/vocab/bio/0.1/spectator> <http://purl.org/net/vocab/2004/03/label#plural> "Spectators"@en .
+<http://purl.org/vocab/bio/0.1/spectator> <http://www.w3.org/2000/01/rdf-schema#comment> "A person that is present at and observes the occurrence of at least part of an event."@en .
+<http://purl.org/vocab/bio/0.1/spectator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/spectator> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/spectator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/spectator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/agent> .
+<http://purl.org/vocab/bio/0.1/spectator> <http://purl.org/dc/terms/issued> "2010-05-05" .
+<http://purl.org/vocab/bio/0.1/organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
+<http://purl.org/vocab/bio/0.1/organization> <http://purl.org/net/vocab/2004/03/label#plural> "Organizations"@en .
+<http://purl.org/vocab/bio/0.1/organization> <http://www.w3.org/2000/01/rdf-schema#comment> "An organization that plays a role in an event."@en .
+<http://purl.org/vocab/bio/0.1/organization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/organization> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/bio/0.1/organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/organization> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/agent> .
+<http://purl.org/vocab/bio/0.1/organization> <http://purl.org/dc/terms/issued> "2010-05-05" .
+<http://purl.org/vocab/bio/0.1/event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/event> <http://www.w3.org/2000/01/rdf-schema#label> "Life Event"@en .
+<http://purl.org/vocab/bio/0.1/event> <http://purl.org/net/vocab/2004/03/label#plural> "Life Events"@en .
+<http://purl.org/vocab/bio/0.1/event> <http://www.w3.org/2000/01/rdf-schema#comment> "An event associated with a person, group or organization."@en .
+<http://purl.org/vocab/bio/0.1/event> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/vocab/bio/0.1/event> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/event> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+_:genid50 <http://purl.org/dc/terms/date> "2010-05-03" .
+_:genid50 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Made a subproperty of owl:differentFrom" .
+<http://purl.org/vocab/bio/0.1/event> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid50 .
+_:genid51 <http://purl.org/dc/terms/date> "2011-06-14" .
+_:genid51 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Changed domain to foaf:Agent" .
+<http://purl.org/vocab/bio/0.1/event> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid51 .
+_:genid52 <http://purl.org/dc/terms/date> "2010-05-03" .
+_:genid52 <http://purl.org/dc/terms/creator> "Ian Davis" .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Added a plural label" .
+<http://purl.org/vocab/bio/0.1/event> <http://www.w3.org/2004/02/skos/core#changeNote> _:genid52 .
+<http://purl.org/vocab/bio/0.1/event> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/bio/0.1/agent> .
+<http://purl.org/vocab/bio/0.1/birth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/birth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/birth> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/event> .
+<http://purl.org/vocab/bio/0.1/birth> <http://www.w3.org/2000/01/rdf-schema#label> "Birth Event"@en .
+<http://purl.org/vocab/bio/0.1/birth> <http://purl.org/net/vocab/2004/03/label#plural> "Birth Events"@en .
+<http://purl.org/vocab/bio/0.1/birth> <http://www.w3.org/2000/01/rdf-schema#comment> "An birth event associated with a person, group or organization."@en .
+<http://purl.org/vocab/bio/0.1/birth> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/vocab/bio/0.1/birth> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/bio/0.1/Birth> .
+<http://purl.org/vocab/bio/0.1/birth> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/birth> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+_:genid53 <http://purl.org/dc/terms/date> "2011-07-12" .
+_:genid53 <http://purl.org/dc/terms/creator> "Alexandre Passant" .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Proposed addition of the property" .
+<http://purl.org/vocab/bio/0.1/birth> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid53 .
+<http://purl.org/vocab/bio/0.1/death> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/death> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/death> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/event> .
+<http://purl.org/vocab/bio/0.1/death> <http://www.w3.org/2000/01/rdf-schema#label> "Death Event"@en .
+<http://purl.org/vocab/bio/0.1/death> <http://purl.org/net/vocab/2004/03/label#plural> "Death Events"@en .
+<http://purl.org/vocab/bio/0.1/death> <http://www.w3.org/2000/01/rdf-schema#comment> "An death event associated with a person, group or organization."@en .
+<http://purl.org/vocab/bio/0.1/death> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/vocab/bio/0.1/death> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/bio/0.1/Death> .
+<http://purl.org/vocab/bio/0.1/death> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/death> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+_:genid54 <http://purl.org/dc/terms/date> "2011-07-12" .
+_:genid54 <http://purl.org/dc/terms/creator> "Alexandre Passant" .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Proposed addition of the property" .
+<http://purl.org/vocab/bio/0.1/death> <http://www.w3.org/2004/02/skos/core#historyNote> _:genid54 .
+<http://purl.org/vocab/bio/0.1/participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/participant> <http://www.w3.org/2000/01/rdf-schema#label> "Participant"@en .
+<http://purl.org/vocab/bio/0.1/participant> <http://purl.org/net/vocab/2004/03/label#plural> "Participants"@en .
+<http://purl.org/vocab/bio/0.1/participant> <http://www.w3.org/2000/01/rdf-schema#comment> "A person, group or organization that participates in a relationship for some time."@en .
+<http://purl.org/vocab/bio/0.1/participant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Relationship> .
+<http://purl.org/vocab/bio/0.1/participant> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/vocab/bio/0.1/participant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/participant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+<http://purl.org/vocab/bio/0.1/participant> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.org/vocab/relationship/participant> .
+<http://purl.org/vocab/bio/0.1/participant> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/bio/0.1/relationship> .
+<http://purl.org/vocab/bio/0.1/participant> <http://purl.org/dc/terms/issued> "2011-06-14" .
+<http://purl.org/vocab/bio/0.1/relationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/relationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/relationship> <http://www.w3.org/2000/01/rdf-schema#label> "Relationship"@en .
+<http://purl.org/vocab/bio/0.1/relationship> <http://purl.org/net/vocab/2004/03/label#plural> "Relationships"@en .
+<http://purl.org/vocab/bio/0.1/relationship> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship that a person, group or organization participates in for some time."@en .
+<http://purl.org/vocab/bio/0.1/relationship> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/vocab/bio/0.1/relationship> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/bio/0.1/Relationship> .
+<http://purl.org/vocab/bio/0.1/relationship> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/relationship> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#differentFrom> .
+<http://purl.org/vocab/bio/0.1/relationship> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.org/vocab/relationship/participantIn> .
+<http://purl.org/vocab/bio/0.1/relationship> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/bio/0.1/participant> .
+<http://purl.org/vocab/bio/0.1/relationship> <http://purl.org/dc/terms/issued> "2011-06-14" .
+<http://purl.org/vocab/bio/0.1/interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/vocab/bio/0.1/interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/bio/0.1/interval> <http://www.w3.org/2000/01/rdf-schema#label> "Relationship Interval"@en .
+<http://purl.org/vocab/bio/0.1/interval> <http://www.w3.org/2000/01/rdf-schema#comment> "The interval during which the relationship persists."@en .
+<http://purl.org/vocab/bio/0.1/interval> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/bio/0.1/Relationship> .
+<http://purl.org/vocab/bio/0.1/interval> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/bio/0.1/Interval> .
+<http://purl.org/vocab/bio/0.1/interval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/bio/0.1/> .
+<http://purl.org/vocab/bio/0.1/interval> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<http://purl.org/vocab/bio/0.1/interval> <http://purl.org/dc/terms/issued> "2010-06-05" .
+<http://purl.org/vocab/bio/0.1/termgroup1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> .
+<http://purl.org/vocab/bio/0.1/termgroup1> <http://www.w3.org/2000/01/rdf-schema#label> "Properties of a person"@en .
+<http://purl.org/vocab/bio/0.1/termgroup1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1> <http://purl.org/vocab/bio/0.1/olb> .
+<http://purl.org/vocab/bio/0.1/termgroup1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_2> <http://purl.org/vocab/bio/0.1/biography> .
+<http://purl.org/vocab/bio/0.1/termgroup1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_3> <http://purl.org/vocab/bio/0.1/keywords> .
+<http://purl.org/vocab/bio/0.1/termgroup1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_4> <http://purl.org/vocab/bio/0.1/father> .
+<http://purl.org/vocab/bio/0.1/termgroup1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_5> <http://purl.org/vocab/bio/0.1/mother> .
+<http://purl.org/vocab/bio/0.1/termgroup1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_6> <http://purl.org/vocab/bio/0.1/child> .
+<http://purl.org/vocab/bio/0.1/termgroup1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_7> <http://purl.org/vocab/bio/0.1/event> .
+<http://purl.org/vocab/bio/0.1/termgroup1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_8> <http://purl.org/vocab/bio/0.1/birth> .
+<http://purl.org/vocab/bio/0.1/termgroup1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_9> <http://purl.org/vocab/bio/0.1/death> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/2000/01/rdf-schema#label> "Types of event"@en .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_2> <http://purl.org/vocab/bio/0.1/IndividualEvent> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_3> <http://purl.org/vocab/bio/0.1/GroupEvent> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_4> <http://purl.org/vocab/bio/0.1/Accession> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_5> <http://purl.org/vocab/bio/0.1/Adoption> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_6> <http://purl.org/vocab/bio/0.1/Annulment> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_7> <http://purl.org/vocab/bio/0.1/Assassination> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_8> <http://purl.org/vocab/bio/0.1/Baptism> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_9> <http://purl.org/vocab/bio/0.1/BarMitzvah> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_10> <http://purl.org/vocab/bio/0.1/BasMitzvah> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_11> <http://purl.org/vocab/bio/0.1/Birth> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_12> <http://purl.org/vocab/bio/0.1/Burial> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_13> <http://purl.org/vocab/bio/0.1/PositionChange> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_14> <http://purl.org/vocab/bio/0.1/Coronation> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_15> <http://purl.org/vocab/bio/0.1/Cremation> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_16> <http://purl.org/vocab/bio/0.1/Death> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_17> <http://purl.org/vocab/bio/0.1/Demotion> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_18> <http://purl.org/vocab/bio/0.1/Dismissal> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_19> <http://purl.org/vocab/bio/0.1/Divorce> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_20> <http://purl.org/vocab/bio/0.1/Emigration> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_21> <http://purl.org/vocab/bio/0.1/Employment> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_22> <http://purl.org/vocab/bio/0.1/Execution> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_23> <http://purl.org/vocab/bio/0.1/Enrolment> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_24> <http://purl.org/vocab/bio/0.1/Funeral> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_25> <http://purl.org/vocab/bio/0.1/Graduation> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_26> <http://purl.org/vocab/bio/0.1/Imprisonment> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_27> <http://purl.org/vocab/bio/0.1/Inauguration> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_28> <http://purl.org/vocab/bio/0.1/Investiture> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_29> <http://purl.org/vocab/bio/0.1/Marriage> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_30> <http://purl.org/vocab/bio/0.1/Murder> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_31> <http://purl.org/vocab/bio/0.1/NameChange> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_32> <http://purl.org/vocab/bio/0.1/Naturalization> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_33> <http://purl.org/vocab/bio/0.1/Ordination> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_34> <http://purl.org/vocab/bio/0.1/Promotion> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_35> <http://purl.org/vocab/bio/0.1/Redundancy> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_36> <http://purl.org/vocab/bio/0.1/Resignation> .
+<http://purl.org/vocab/bio/0.1/termgroup2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_37> <http://purl.org/vocab/bio/0.1/Retirement> .
+<http://purl.org/vocab/bio/0.1/termgroup3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> .
+<http://purl.org/vocab/bio/0.1/termgroup3> <http://www.w3.org/2000/01/rdf-schema#label> "Properties of an event"@en .
+<http://purl.org/vocab/bio/0.1/termgroup3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1> <http://purl.org/vocab/bio/0.1/date> .
+<http://purl.org/vocab/bio/0.1/termgroup3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_2> <http://purl.org/vocab/bio/0.1/place> .
+<http://purl.org/vocab/bio/0.1/termgroup3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_3> <http://purl.org/vocab/bio/0.1/state> .
+<http://purl.org/vocab/bio/0.1/termgroup3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_4> <http://purl.org/vocab/bio/0.1/position> .
+<http://purl.org/vocab/bio/0.1/termgroup4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> .
+<http://purl.org/vocab/bio/0.1/termgroup4> <http://www.w3.org/2000/01/rdf-schema#label> "Properties that relate an event to an agent"@en .
+<http://purl.org/vocab/bio/0.1/termgroup4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1> <http://purl.org/vocab/bio/0.1/agent> .
+<http://purl.org/vocab/bio/0.1/termgroup4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_2> <http://purl.org/vocab/bio/0.1/parent> .
+<http://purl.org/vocab/bio/0.1/termgroup4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_3> <http://purl.org/vocab/bio/0.1/employer> .
+<http://purl.org/vocab/bio/0.1/termgroup4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_4> <http://purl.org/vocab/bio/0.1/officiator> .
+<http://purl.org/vocab/bio/0.1/termgroup4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_5> <http://purl.org/vocab/bio/0.1/organization> .
+<http://purl.org/vocab/bio/0.1/termgroup4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_6> <http://purl.org/vocab/bio/0.1/principal> .
+<http://purl.org/vocab/bio/0.1/termgroup4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_7> <http://purl.org/vocab/bio/0.1/partner> .
+<http://purl.org/vocab/bio/0.1/termgroup4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_8> <http://purl.org/vocab/bio/0.1/witness> .
+<http://purl.org/vocab/bio/0.1/termgroup4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_9> <http://purl.org/vocab/bio/0.1/spectator> .
+<http://purl.org/vocab/bio/0.1/termgroup5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> .
+<http://purl.org/vocab/bio/0.1/termgroup5> <http://www.w3.org/2000/01/rdf-schema#label> "Properties that relate an event to another event"@en .
+<http://purl.org/vocab/bio/0.1/termgroup5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1> <http://purl.org/vocab/bio/0.1/concurrentEvent> .
+<http://purl.org/vocab/bio/0.1/termgroup5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_2> <http://purl.org/vocab/bio/0.1/followingEvent> .
+<http://purl.org/vocab/bio/0.1/termgroup5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_3> <http://purl.org/vocab/bio/0.1/precedingEvent> .
+<http://purl.org/vocab/bio/0.1/termgroup5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_4> <http://purl.org/vocab/bio/0.1/immediatelyFollowingEvent> .
+<http://purl.org/vocab/bio/0.1/termgroup5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#_5> <http://purl.org/vocab/bio/0.1/immediatelyPrecedingEvent> .
+<http://purl.org/vocab/bio/examples/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open.vocab.org/terms/SchemaExample> .
+<http://purl.org/vocab/bio/examples/1> <http://www.w3.org/2000/01/rdf-schema#label> "A Biography of Henry VIII, King of England" .
+<http://purl.org/vocab/bio/examples/1> <http://www.w3.org/2000/01/rdf-schema#comment> "<p>Based on information at <a href=\"http://en.wikipedia.org/wiki/Henry_VIII_of_England\">Wikipedia</a> and <a href=\"http://www3.dcs.hull.ac.uk/cgi-bin/gedlkup/n=royal?royal00828\">Hull University</a></p>\n<pre><code>@prefix bio: &lt;http://purl.org/vocab/bio/0.1/&gt; .&#xD;\n@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .&#xD;\n@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .&#xD;\n&#xD;\n_:henryviii&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Henry VIII, King of England\"&#xD;\n  ; bio:father _:henryvii&#xD;\n  ; bio:mother _:elizplantagenet&#xD;\n  ; bio:child _:child1, _:child2, _:child3, _:child4, _:child5, _:child6, _:child7, _:child8&#xD;\n  ; bio:birth _:birth&#xD;\n  ; bio:death _:death&#xD;\n  ; bio:event _:burial, _:accession, _:coronation, _:marriage1&#xD;\n            , _:marriage2, _:marriage3, _:marriage4, _:marriage5, _:marriage6&#xD;\n  .&#xD;\n&#xD;\n_:henryvii&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Henry VII Tudor, King of England\"&#xD;\n  ; bio:child _:henryviii&#xD;\n  .&#xD;\n&#xD;\n_:elizplantagenet&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Elizabeth of York\"&#xD;\n  ; bio:child _:henryviii&#xD;\n  .&#xD;\n  &#xD;\n_:birth&#xD;\n  a bio:Birth&#xD;\n  ; rdfs:label \"The birth of Henry VIII to Henry VII and Elizabeth Plantagenet on 28 June 1491\"&#xD;\n  ; bio:date \"1491-06-28\"&#xD;\n  ; bio:place &lt;http://dbpedia.org/resource/Palace_of_Placentia&gt;&#xD;\n  ; bio:parent _:henryvii, _:elizplantagenet&#xD;\n  ; bio:principal _:henryviii&#xD;\n  .&#xD;\n&#xD;\n_:death&#xD;\n  a bio:Death&#xD;\n  ; rdfs:label \"The death of Henry VIII on 28 January 1547\"&#xD;\n  ; bio:date \"1547-01-28\"&#xD;\n  ; bio:place &lt;http://dbpedia.org/resource/Palace_of_Whitehall&gt;&#xD;\n  ; bio:principal _:henryviii&#xD;\n  .&#xD;\n  &#xD;\n&#xD;\n_:accession&#xD;\n  a bio:Accession&#xD;\n  ; rdfs:label \"The accession of Henry VIII to the throne of England on 21 April 1509\"&#xD;\n  ; bio:date \"1509-06-24\"&#xD;\n  ; bio:principal _:henryviii&#xD;\n  ; bio:state &lt;http://dbpedia.org/resource/Kingdom_of_England&gt;&#xD;\n  ; bio:immediatelyPrecedingEvent [ a bio:Death&#xD;\n                                    ; rdfs:label \"The death of Henry VII on 9 May 1509\"&#xD;\n                                    ; bio:date \"1509-05-09\"&#xD;\n                                    ; bio:place &lt;http://dbpedia.org/resource/Richmond_Palace&gt;&#xD;\n                                    ; bio:principal _:henryvii&#xD;\n                                  ]&#xD;\n  .&#xD;\n&#xD;\n_:coronation&#xD;\n  a bio:Coronation&#xD;\n  ; rdfs:label \"The coronation of Henry VIII as King of England on 24 June 1509\"&#xD;\n  ; bio:date \"1509-06-24\"&#xD;\n  ; bio:place &lt;http://dbpedia.org/page/Westminster_Abbey&gt;&#xD;\n  ; bio:principal _:henryviii&#xD;\n  ; bio:precedingEvent _:accession&#xD;\n  .&#xD;\n&#xD;\n_:burial&#xD;\n  a bio:Burial&#xD;\n  ; rdfs:label \"The burial of Henry VII at St.George's Chapel, Windsor Castle,England\"&#xD;\n  ; bio:place &lt;http://dbpedia.org/resource/St_George%E2%80%99s_Chapel%2C_Windsor&gt;&#xD;\n  ; bio:principal _:henryviii&#xD;\n  ; bio:precedingEvent _:death&#xD;\n  .&#xD;\n&#xD;\n_:marriage1&#xD;\n  a bio:Marriage&#xD;\n  ; rdfs:label \"The marriage of Henry VIII and Catherine of Aragon\"&#xD;\n  ; bio:date \"1509-06-11\"&#xD;\n  ; bio:place &lt;http://dbpedia.org/resource/Palace_of_Placentia&gt;&#xD;\n  ; bio:partner _:henryvii, _:catharagon&#xD;\n  .&#xD;\n&#xD;\n_:annulment1&#xD;\n  a bio:Annulment&#xD;\n  ; rdfs:label \"The annulment of the marriage between Henry VIII and Catherine of Aragon\"&#xD;\n  ; bio:date \"1533-05-23\"&#xD;\n  ; bio:partner _:henryvii, _:catharagon &#xD;\n  ; bio:officiator &lt;http://dbpedia.org/resource/Thomas_Cranmer&gt;&#xD;\n  .&#xD;\n&#xD;\n_:catharagon&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Anne Boleyn\"&#xD;\n  ; bio:child _:child1, _:child2, _:child3, _:child4, _:child5&#xD;\n  ; bio:event _:marriage1, _:annulment1&#xD;\n  .&#xD;\n&#xD;\n_:child1&#xD;\n  a foaf:Person&#xD;\n  ; rdfs:label \"Unnamed daughter of Henry VIII and Catherine of Aragon\"&#xD;\n  ; bio:event [ a bio:Birth&#xD;\n                ; bio:date \"1510-01-31\"&#xD;\n                ; bio:principal _:child1&#xD;\n                ; bio:parent _:henryviii, _:catharagon&#xD;\n              ]&#xD;\n  ; bio:event [ a bio:Death&#xD;\n                ; bio:date \"1510-02-02\"&#xD;\n                ; bio:principal _:child1&#xD;\n              ]&#xD;\n  .&#xD;\n&#xD;\n_:child2&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Henry\"&#xD;\n  ; bio:event [ a bio:Birth&#xD;\n                ; bio:date \"1511-01-01\"&#xD;\n                ; bio:principal _:child2&#xD;\n                ; bio:parent _:henryviii, _:catharagon&#xD;\n              ]&#xD;\n  ; bio:event [ a bio:Death&#xD;\n                ; bio:date \"1511-02-22\"&#xD;\n                ; bio:principal _:child2&#xD;\n              ]&#xD;\n  .&#xD;\n  &#xD;\n_:child3&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Henry\"&#xD;\n  ; bio:event [ a bio:Birth&#xD;\n                ; bio:date \"1514-12\"&#xD;\n                ; bio:principal _:child3&#xD;\n                ; bio:parent _:henryviii, _:catharagon&#xD;\n              ]&#xD;\n  ; bio:event [ a bio:Death&#xD;\n                ; bio:principal _:child3&#xD;\n              ]&#xD;\n  .&#xD;\n&#xD;\n_:child4&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Mary\"&#xD;\n  ; bio:event [ a bio:Birth&#xD;\n                ; bio:date \"1516-02-18\"&#xD;\n                ; bio:principal _:child4&#xD;\n                ; bio:parent _:henryviii, _:catharagon&#xD;\n              ]&#xD;\n  ; bio:event [ a bio:Death&#xD;\n                ; bio:date \"1558-11-17\"&#xD;\n                ; bio:principal _:child4&#xD;\n              ]&#xD;\n  .&#xD;\n&#xD;\n&#xD;\n_:child5&#xD;\n  a foaf:Person&#xD;\n  ; rdfs:label \"Unnamed daughter of Henry VIII and Catherine of Aragon\"&#xD;\n  ; bio:event [ a bio:Birth&#xD;\n                ; bio:date \"1518-11\"&#xD;\n                ; bio:principal _:child5&#xD;\n                ; bio:parent _:henryviii, _:catharagon&#xD;\n              ]&#xD;\n  ; bio:event [ a bio:Death&#xD;\n                ; bio:principal _:child5&#xD;\n              ]&#xD;\n  .&#xD;\n  &#xD;\n&#xD;\n_:marriage2&#xD;\n  a bio:Marriage&#xD;\n  ; rdfs:label \"The marriage of Henry VIII and Anne Boleyn\"&#xD;\n  ; bio:date \"1533-01-25\"&#xD;\n  ; bio:partner _:henryvii, _:anneboleyn&#xD;\n  ; bio:place &lt;http://dbpedia.org/resource/Westminster_Abbey&gt;&#xD;\n  .&#xD;\n&#xD;\n_:anneboleyn&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Anne Boleyn\"&#xD;\n  ; bio:child _:child6&#xD;\n  ; bio:event _:marriage2, _:annulment2, _:anneboleyn-death&#xD;\n  .&#xD;\n&#xD;\n_:annulment2&#xD;\n  a bio:Annulment&#xD;\n  ; rdfs:label \"The annulment of the marriage between Henry VIII and Anne Boleyn\"&#xD;\n  ; bio:date \"1536-05-17\"&#xD;\n  ; bio:partner _:henryvii, _:anneboleyn &#xD;\n  .&#xD;\n  &#xD;\n_:anneboleyn-death&#xD;\n  a bio:Execution&#xD;\n  ; rdfs:label \"The beheading of Anne Boleyn\"&#xD;\n  ; bio:date \"1536-05-19\"&#xD;\n  ; bio:place &lt;http://dbpedia.org/resource/Tower_of_London&gt;&#xD;\n  ; bio:principal _:anneboleyn&#xD;\n  .&#xD;\n&#xD;\n_:child6&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Elizabeth\"&#xD;\n  ; bio:event [ a bio:Birth&#xD;\n                ; bio:date \"1533-09-07\"&#xD;\n                ; bio:principal _:child6&#xD;\n                ; bio:parent _:henryviii, _:anneboleyn&#xD;\n              ]&#xD;\n  ; bio:event [ a bio:Death&#xD;\n                ; bio:date \"1603-03-24\"&#xD;\n                ; bio:principal _:child6&#xD;\n              ]&#xD;\n  .&#xD;\n&#xD;\n_:marriage3&#xD;\n  a bio:Marriage&#xD;\n  ; bio:date \"1536-05-20\"&#xD;\n  ; bio:partner _:henryviii, _:janeseymour&#xD;\n  ; bio:place &lt;http://dbpedia.org/resource/York_Place&gt;&#xD;\n  .&#xD;\n&#xD;\n_:janeseymour&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Jane Seymour\"&#xD;\n  ; bio:event _:marriage3, _:janeseymour-death&#xD;\n  ; bio:child _:child7&#xD;\n  .&#xD;\n&#xD;\n_:janeseymour-death&#xD;\n  a bio:Death&#xD;\n  ; rdfs:label \"The death of Jane Seymour on 24 October 1537\"&#xD;\n  ; bio:date \"1537-10-24\"&#xD;\n  ; bio:principal _:janeseymour&#xD;\n  ; bio:place &lt;http://dbpedia.org/resource/Hampton_Court_Palace&gt;&#xD;\n  .&#xD;\n  &#xD;\n&#xD;\n_:child7&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Edward\"&#xD;\n  ; bio:event [ a bio:Birth&#xD;\n                ; bio:date \"1537-10-12\"&#xD;\n                ; bio:principal _:child7&#xD;\n                ; bio:parent _:henryviii, _:janeseymour&#xD;\n                ; bio:place &lt;http://dbpedia.org/resource/Hampton_Court_Palace&gt;&#xD;\n              ]&#xD;\n  ; bio:event [ a bio:Accession&#xD;\n                ; bio:immediatelyPrecedingEvent _:death&#xD;\n              ]&#xD;\n  ; bio:event [ a bio:Death&#xD;\n                ; bio:date \"1553-07-06\"&#xD;\n                ; bio:principal _:child7&#xD;\n                ; bio:place &lt;http://dbpedia.org/resource/Palace_of_Placentia&gt;&#xD;\n              ]&#xD;\n  .&#xD;\n&#xD;\n_:marriage4&#xD;\n  a bio:Marriage&#xD;\n  ; bio:date \"1540-01-06\"&#xD;\n  ; bio:partner _:henryvii, _:annecleves&#xD;\n  ; bio:place &lt;http://dbpedia.org/resource/Palace_of_Placentia&gt;&#xD;\n  ; bio:officiator &lt;http://dbpedia.org/resource/Thomas_Cranmer&gt;&#xD;\n  .&#xD;\n    &#xD;\n_:annulment3&#xD;\n  a bio:Annulment&#xD;\n  ; rdfs:label \"The annulment of the marriage between Henry VIII and Anne of Cleves\"&#xD;\n  ; bio:date \"1540-07-09\"&#xD;\n  ; bio:partner _:henryviii, _:annecleves&#xD;\n  .&#xD;\n&#xD;\n_:annecleves&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Anne of Cleves\"&#xD;\n  ; bio:event _:marriage4, _:annulment3&#xD;\n  .&#xD;\n&#xD;\n_:marriage5&#xD;\n  a bio:Marriage&#xD;\n  ; bio:date \"1540-07-28\"&#xD;\n  ; bio:partner _:henryviii, _:cathhoward&#xD;\n  ; bio:place &lt;http://dbpedia.org/resource/Oatlands_Palace&gt;&#xD;\n  .&#xD;\n  &#xD;\n_:cathhoward&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Catherine Howard\"&#xD;\n  ; bio:event _:marriage5, _:cathhoward-death&#xD;\n  .&#xD;\n  &#xD;\n_:cathhoward-death&#xD;\n  a bio:Execution&#xD;\n  ; rdfs:label \"The beheading of Catherine Howard\"&#xD;\n  ; bio:date \"1542-02-13\"&#xD;\n  ; bio:place &lt;http://dbpedia.org/resource/Tower_of_London&gt;&#xD;\n  ; bio:principal _:cathhoward&#xD;\n  .&#xD;\n&#xD;\n_:marriage6&#xD;\n  a bio:Marriage&#xD;\n  ; rdfs:label \"The marriage between Henry VIII and Catherine Parr\"&#xD;\n  ; bio:date \"1543-07-12\"&#xD;\n  ; bio:place &lt;http://dbpedia.org/resource/Hampton_Court_Palace&gt;&#xD;\n  ; bio:partner _:henryviii, _:cathparr&#xD;\n  .&#xD;\n  &#xD;\n_:cathparr&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Catherine Parr\"&#xD;\n  ; bio:event _:marriage6&#xD;\n  .&#xD;\n&#xD;\n&#xD;\n_:elizblount&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Elizabeth Blount\"&#xD;\n  ; bio:child _:child8&#xD;\n  .&#xD;\n  &#xD;\n_:child8&#xD;\n  a foaf:Person&#xD;\n  ; foaf:name \"Henry FitzRoy\"&#xD;\n  ; foaf:mother _:elizblount&#xD;\n  ; foaf:father _:henryviii&#xD;\n  ; bio:event [ a bio:Birth&#xD;\n                ; bio:principal _:child8&#xD;\n                ; bio:date \"1519-06-15\"&#xD;\n                ; bio:parent _:henryviii, _:elizblount&#xD;\n                ; bio:place &lt;http://dbpedia.org/resource/Blackmore&gt;&#xD;\n                ]&#xD;\n  .&#xD;\n&#xD;\n_:marriage1-interval&#xD;\n  a bio:Interval&#xD;\n  ; rdfs:label \"The period of time during which Henry VIII and Catherine of Aragon were married\"&#xD;\n  ; bio:initiatingEvent _:marriage1&#xD;\n  ; bio:concludingEvent _:annulment1&#xD;\n  .&#xD;\n&#xD;\n_:marriage2-interval&#xD;\n  a bio:Interval&#xD;\n  ; rdfs:label \"The period of time during which Henry VIII and Anne Boleyn were married\"&#xD;\n  ; bio:initiatingEvent _:marriage2&#xD;\n  ; bio:concludingEvent _:annulment2&#xD;\n  .&#xD;\n  &#xD;\n_:marriage3-interval&#xD;\n  a bio:Interval&#xD;\n  ; rdfs:label \"The period of time during which Henry VIII and Jane Seymour were married\"&#xD;\n  ; bio:initiatingEvent _:marriage3&#xD;\n  ; bio:concludingEvent _:janeseymour-death&#xD;\n  .&#xD;\n&#xD;\n_:marriage4-interval&#xD;\n  a bio:Interval&#xD;\n  ; rdfs:label \"The period of time during which Henry VIII and Anne of Cleves were married\"&#xD;\n  ; bio:initiatingEvent _:marriage4&#xD;\n  ; bio:concludingEvent _:annulment3&#xD;\n  .&#xD;\n&#xD;\n_:marriage5-interval&#xD;\n  a bio:Interval&#xD;\n  ; rdfs:label \"The period of time during which Henry VIII and Catherine Howard were married\"&#xD;\n  ; bio:initiatingEvent _:marriage5&#xD;\n  ; bio:terminatingEvent _:cathhoward-death&#xD;\n  .&#xD;\n&#xD;\n_:marriage6-interval&#xD;\n  a bio:Interval&#xD;\n  ; rdfs:label \"The period of time during which Henry VIII and Catherine Parr were married\"&#xD;\n  ; bio:initiatingEvent _:marriage6&#xD;\n  ; bio:terminatingEvent _:henryviii-death&#xD;\n  .&#xD;\n</code></pre>\n       "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
