@@ -28,7 +28,7 @@ popd >/dev/null
 fileid=0
 echo > $TMP/ontologies.nt
 for file in $SCRIPTPATH/ontologies/*.ttl; do
-  serdi $file | sed "s/_:b\([[:digit:]]*\)/<http:\/\/example.org\/.well-known\/genid\/$fileid-\\1>/g" >> $TMP/ontologies.nt
+  serdi -p 'BLANK' $file | sed "s/_:BLANK\([[:alnum:]]*\)/<http:\/\/example.org\/.well-known\/genid\/$fileid-\\1>/g" >> $TMP/ontologies.nt
   let fileid=fileid+1
 done
 # Compute deductive closure of ontologies
