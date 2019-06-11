@@ -394,6 +394,7 @@ foaf:knows
     rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
     rdfs:label "knows" ;
     rdfs:range foaf:Person ;
+    rdfs:subPropertyOf <http://schema.org/knows> ;
     vs:term_status "stable" .
 
 foaf:lastName
