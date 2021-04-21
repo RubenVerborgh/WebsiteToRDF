@@ -1,15 +1,18 @@
-#!/usr/bin/env python
-import sys
-import rdflib
+#!/usr/bin/env node
+const { createReadStream } = require('fs');
+const rdfParser = require('rdf-parse').default;
+const { StreamWriter } = require('n3');
 
-# Parse arguments
-if len(sys.argv) != 3:
-    sys.stderr.write("usage: Usage: rdfa2ttl https://example.org/foo/ /var/www/example.org/foo/index.html\n")
-    sys.exit(1)
-baseIRI = sys.argv[1]
-file = sys.argv[2]
+// Parse arguments
+const args = process.argv.slice(2);
+if (args.length !== 2) {
+  process.stderr.write('usage: Usage: rdfa2ttl https://example.org/foo/ /var/www/example.org/foo/index.html\n');
+  process.exit(1);
+}
+const [baseIRI, path] = args;
 
-# Extract and convert RDFa
-g = rdflib.Graph()
-g.parse(file, format='rdfa', publicID=baseIRI)
-print(g.serialize(format='nt'))
+// Serialize the parsed stream
+const document = createReadStream(path, 'utf8');
+rdfParser.parse(document, { contentType: 'text/html', baseIRI })
+  .pipe(new StreamWriter())
+  .pipe(process.stdout);
